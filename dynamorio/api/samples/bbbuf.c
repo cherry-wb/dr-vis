@@ -47,6 +47,7 @@
 
 #include "dr_api.h"
 #include <string.h>
+#include <stdio.h>
 
 #define MINSERT instrlist_meta_preinsert
 
@@ -129,6 +130,7 @@ event_basic_block(void *drcontext, void *tag, instrlist_t *bb,
     instr_t *first = instrlist_first(bb);
     app_pc   pc    = dr_fragment_app_pc(tag);
     instr_t *mov1, *mov2;
+    instr_t *instr = NULL;
     /* We try to avoid register stealing by using "dead" register if possible.
      * However, technically, a fault could come in and want the original value
      * of the "dead" register, but that's too corner-case for us.
@@ -154,6 +156,25 @@ event_basic_block(void *drcontext, void *tag, instrlist_t *bb,
     instrlist_insert_mov_immed_ptrsz(drcontext, (ptr_int_t)pc,
                                      OPND_CREATE_MEMPTR(reg, 0),
                                      bb, first, &mov1, &mov2);
+
+
+    for (instr  = instrlist_first(bb);
+				    instr != NULL;
+				    instr = instr_get_next(instr)) {
+        if (!instr_ok_to_mangle(instr))
+            continue;
+
+	    //dr_printf(PFX"\t%d\n", pc, instr_get_opcode(instr));
+
+	    char buf[128];
+	    instr_disassemble_to_buffer(drcontext, instr, buf, (size_t)128);
+	    dr_printf("%s\n", buf);
+
+
+
+
+    }
+
     DR_ASSERT(mov1 != NULL);
     instr_set_ok_to_mangle(mov1, false);
     if (mov2 != NULL)
@@ -235,6 +256,7 @@ event_thread_exit(void *drcontext)
 static void
 event_exit(void)
 {
+
     if (!dr_raw_tls_cfree(tls_offs, 1))
         DR_ASSERT(false);
 }
