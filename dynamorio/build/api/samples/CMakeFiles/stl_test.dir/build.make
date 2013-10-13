@@ -56,15 +56,15 @@ api/samples/CMakeFiles/stl_test.dir/stl_test.cpp.o: api/samples/CMakeFiles/stl_t
 api/samples/CMakeFiles/stl_test.dir/stl_test.cpp.o: ../api/samples/stl_test.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object api/samples/CMakeFiles/stl_test.dir/stl_test.cpp.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS)  -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2 -fno-stack-protector -o CMakeFiles/stl_test.dir/stl_test.cpp.o -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/stl_test.cpp
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS)  -DDEBUG -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/stl_test.dir/stl_test.cpp.o -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/stl_test.cpp
 
 api/samples/CMakeFiles/stl_test.dir/stl_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stl_test.dir/stl_test.cpp.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS)  -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2 -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/stl_test.cpp > CMakeFiles/stl_test.dir/stl_test.cpp.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS)  -DDEBUG -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/stl_test.cpp > CMakeFiles/stl_test.dir/stl_test.cpp.i
 
 api/samples/CMakeFiles/stl_test.dir/stl_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stl_test.dir/stl_test.cpp.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS)  -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2 -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/stl_test.cpp -o CMakeFiles/stl_test.dir/stl_test.cpp.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS)  -DDEBUG -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/stl_test.cpp -o CMakeFiles/stl_test.dir/stl_test.cpp.s
 
 api/samples/CMakeFiles/stl_test.dir/stl_test.cpp.o.requires:
 .PHONY : api/samples/CMakeFiles/stl_test.dir/stl_test.cpp.o.requires
@@ -84,7 +84,7 @@ stl_test_EXTERNAL_OBJECTS =
 
 api/samples/bin/libstl_test.so: api/samples/CMakeFiles/stl_test.dir/stl_test.cpp.o
 api/samples/bin/libstl_test.so: api/samples/CMakeFiles/stl_test.dir/build.make
-api/samples/bin/libstl_test.so: lib64/release/libdynamorio.so.4.1
+api/samples/bin/libstl_test.so: lib64/debug/libdynamorio.so.4.1
 api/samples/bin/libstl_test.so: api/samples/CMakeFiles/stl_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library bin/libstl_test.so"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stl_test.dir/link.txt --verbose=$(VERBOSE)

@@ -157,7 +157,7 @@ event_basic_block(void *drcontext, void *tag, instrlist_t *bb,
                                      OPND_CREATE_MEMPTR(reg, 0),
                                      bb, first, &mov1, &mov2);
 
-
+//Bug- pc doesn't change for multiple instructions
     for (instr  = instrlist_first(bb);
 				    instr != NULL;
 				    instr = instr_get_next(instr)) {
@@ -168,11 +168,7 @@ event_basic_block(void *drcontext, void *tag, instrlist_t *bb,
 
 	    char buf[128];
 	    instr_disassemble_to_buffer(drcontext, instr, buf, (size_t)128);
-	    dr_printf("%s\n", buf);
-
-
-
-
+	    dr_printf(PFX"\t%s\n",pc, buf);
     }
 
     DR_ASSERT(mov1 != NULL);

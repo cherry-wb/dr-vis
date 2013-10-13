@@ -12,7 +12,7 @@ IF(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     STRING(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   ELSE(BUILD_TYPE)
-    SET(CMAKE_INSTALL_CONFIG_NAME "Release")
+    SET(CMAKE_INSTALL_CONFIG_NAME "Debug")
   ENDIF(BUILD_TYPE)
   MESSAGE(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 ENDIF(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
@@ -34,8 +34,8 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FOREACH(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/release/libdynamorio.so.4.1"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/release/libdynamorio.so"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/debug/libdynamorio.so.4.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/debug/libdynamorio.so"
       )
     IF(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
@@ -44,13 +44,13 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
            RPATH "")
     ENDIF()
   ENDFOREACH()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/release" TYPE SHARED_LIBRARY PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE FILES
-    "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/lib64/release/libdynamorio.so.4.1"
-    "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/lib64/release/libdynamorio.so"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/debug" TYPE SHARED_LIBRARY PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE FILES
+    "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/lib64/debug/libdynamorio.so.4.1"
+    "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/lib64/debug/libdynamorio.so"
     )
   FOREACH(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/release/libdynamorio.so.4.1"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/release/libdynamorio.so"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/debug/libdynamorio.so.4.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/debug/libdynamorio.so"
       )
     IF(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
@@ -78,22 +78,22 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/release/libdrpreload.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/release/libdrpreload.so")
+  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/debug/libdrpreload.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/debug/libdrpreload.so")
     FILE(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/release/libdrpreload.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/debug/libdrpreload.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/release" TYPE SHARED_LIBRARY FILES "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/lib64/release/libdrpreload.so")
-  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/release/libdrpreload.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/release/libdrpreload.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/debug" TYPE SHARED_LIBRARY FILES "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/lib64/debug/libdrpreload.so")
+  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/debug/libdrpreload.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/debug/libdrpreload.so")
     IF(CMAKE_INSTALL_DO_STRIP)
-      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/release/libdrpreload.so")
+      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/debug/libdrpreload.so")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/release" TYPE STATIC_LIBRARY FILES "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/lib64/libdrdecode.a")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/debug" TYPE STATIC_LIBRARY FILES "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/lib64/libdrdecode.a")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

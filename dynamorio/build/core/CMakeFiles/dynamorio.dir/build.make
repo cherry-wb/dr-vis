@@ -981,7 +981,7 @@ core/CMakeFiles/dynamorio.dir/x86/x86.asm.o: configure.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building ASM object core/CMakeFiles/dynamorio.dir/x86/x86.asm.o"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && /usr/bin/cpp  $(ASM_FLAGS) $(ASM_DEFINES) -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/core/x86/x86.asm -o CMakeFiles/dynamorio.dir/x86/x86.asm.o.s
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && /usr/bin/cmake -Dfile=CMakeFiles/dynamorio.dir/x86/x86.asm.o.s -P "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/make/CMake_asm.cmake"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && /usr/bin/as  -mmnemonic=intel -msyntax=intel -mnaked-reg --noexecstack --64 -o CMakeFiles/dynamorio.dir/x86/x86.asm.o CMakeFiles/dynamorio.dir/x86/x86.asm.o.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && /usr/bin/as  -mmnemonic=intel -msyntax=intel -mnaked-reg --noexecstack --64 -g -o CMakeFiles/dynamorio.dir/x86/x86.asm.o CMakeFiles/dynamorio.dir/x86/x86.asm.o.s
 
 core/CMakeFiles/dynamorio.dir/x86/x86.asm.o.requires:
 .PHONY : core/CMakeFiles/dynamorio.dir/x86/x86.asm.o.requires
@@ -1399,74 +1399,74 @@ dynamorio_OBJECTS = \
 # External object files for target dynamorio
 dynamorio_EXTERNAL_OBJECTS =
 
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/options.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/dynamo.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/fragment.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/fcache.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/link.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/dispatch.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/emit.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/utils.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/config.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/stats.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/heap.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/instrlist.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/monitor.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/perfctr.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/vmareas.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/rct.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/hotpatch.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/hashtable.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/module_list.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/moduledb.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/perscache.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/nudge.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/synch.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/buildmark.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/loader_shared.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/io.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/native_exec.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/string.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/arch.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/decode.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/decode_table.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/encode.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/emit_utils.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/instr.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/interp.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/proc.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/mangle.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/steal_reg.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/x86_code.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/disassemble.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/x86.asm.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/decode_fast.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/optimize.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/sideline.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/instrument.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/retcheck.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/x86_to_x64.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/os.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/signal.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/module.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/pcprofile.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/stackdump.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/diagnost.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/loader.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/nudgesig.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/native_elf.c.o
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/build.make
-lib64/release/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../lib64/release/libdynamorio.so"
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/options.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/dynamo.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/fragment.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/fcache.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/link.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/dispatch.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/emit.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/utils.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/config.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/stats.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/heap.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/instrlist.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/monitor.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/perfctr.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/vmareas.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/rct.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/hotpatch.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/hashtable.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/module_list.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/moduledb.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/perscache.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/nudge.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/synch.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/buildmark.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/loader_shared.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/io.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/native_exec.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/string.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/arch.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/decode.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/decode_table.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/encode.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/emit_utils.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/instr.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/interp.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/proc.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/mangle.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/steal_reg.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/x86_code.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/disassemble.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/x86.asm.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/decode_fast.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/optimize.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/sideline.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/instrument.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/retcheck.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/x86/x86_to_x64.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/os.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/signal.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/module.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/pcprofile.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/stackdump.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/diagnost.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/loader.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/nudgesig.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/unix/native_elf.c.o
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/build.make
+lib64/debug/libdynamorio.so.4.1: core/CMakeFiles/dynamorio.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../lib64/debug/libdynamorio.so"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && /usr/bin/cmake -D outfile=/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core/ldscript -DCMAKE_LINKER=/usr/bin/ld -DCMAKE_COMPILER_IS_GNUCC=1 -DLD_FLAGS=-melf_x86_64 -Dset_preferred=1 -Dreplace_maxpagesize= -Dpreferred_base=0x71000000 -P /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/core/CMake_ldscript.cmake
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dynamorio.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && $(CMAKE_COMMAND) -E cmake_symlink_library ../lib64/release/libdynamorio.so.4.1 ../lib64/release/libdynamorio.so.4.1 ../lib64/release/libdynamorio.so
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && /usr/bin/cmake -D lib=/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/lib64/release/libdynamorio.so -D READELF_EXECUTABLE=/usr/bin/readelf -P /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/core/CMake_readelf.cmake
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && $(CMAKE_COMMAND) -E cmake_symlink_library ../lib64/debug/libdynamorio.so.4.1 ../lib64/debug/libdynamorio.so.4.1 ../lib64/debug/libdynamorio.so
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && /usr/bin/cmake -D lib=/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/lib64/debug/libdynamorio.so -D READELF_EXECUTABLE=/usr/bin/readelf -P /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/core/CMake_readelf.cmake
 
-lib64/release/libdynamorio.so: lib64/release/libdynamorio.so.4.1
+lib64/debug/libdynamorio.so: lib64/debug/libdynamorio.so.4.1
 
 # Rule to build all files generated by this target.
-core/CMakeFiles/dynamorio.dir/build: lib64/release/libdynamorio.so
+core/CMakeFiles/dynamorio.dir/build: lib64/debug/libdynamorio.so
 .PHONY : core/CMakeFiles/dynamorio.dir/build
 
 core/CMakeFiles/dynamorio.dir/requires: core/CMakeFiles/dynamorio.dir/options.c.o.requires

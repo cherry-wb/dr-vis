@@ -56,15 +56,15 @@ ext/drsyms/CMakeFiles/drsyms.dir/drsyms_linux.c.o: ext/drsyms/CMakeFiles/drsyms.
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_linux.c.o: ../ext/drsyms/drsyms_linux.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object ext/drsyms/CMakeFiles/drsyms.dir/drsyms_linux.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drsyms.dir/drsyms_linux.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_linux.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drsyms.dir/drsyms_linux.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_linux.c
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_linux.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drsyms.dir/drsyms_linux.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_linux.c > CMakeFiles/drsyms.dir/drsyms_linux.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_linux.c > CMakeFiles/drsyms.dir/drsyms_linux.c.i
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_linux.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drsyms.dir/drsyms_linux.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_linux.c -o CMakeFiles/drsyms.dir/drsyms_linux.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_linux.c -o CMakeFiles/drsyms.dir/drsyms_linux.c.s
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_linux.c.o.requires:
 .PHONY : ext/drsyms/CMakeFiles/drsyms.dir/drsyms_linux.c.o.requires
@@ -79,15 +79,15 @@ ext/drsyms/CMakeFiles/drsyms.dir/drsyms_unix.c.o: ext/drsyms/CMakeFiles/drsyms.d
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_unix.c.o: ../ext/drsyms/drsyms_unix.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object ext/drsyms/CMakeFiles/drsyms.dir/drsyms_unix.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drsyms.dir/drsyms_unix.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_unix.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drsyms.dir/drsyms_unix.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_unix.c
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_unix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drsyms.dir/drsyms_unix.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_unix.c > CMakeFiles/drsyms.dir/drsyms_unix.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_unix.c > CMakeFiles/drsyms.dir/drsyms_unix.c.i
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_unix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drsyms.dir/drsyms_unix.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_unix.c -o CMakeFiles/drsyms.dir/drsyms_unix.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_unix.c -o CMakeFiles/drsyms.dir/drsyms_unix.c.s
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_unix.c.o.requires:
 .PHONY : ext/drsyms/CMakeFiles/drsyms.dir/drsyms_unix.c.o.requires
@@ -102,15 +102,15 @@ ext/drsyms/CMakeFiles/drsyms.dir/drsyms_elf.c.o: ext/drsyms/CMakeFiles/drsyms.di
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_elf.c.o: ../ext/drsyms/drsyms_elf.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object ext/drsyms/CMakeFiles/drsyms.dir/drsyms_elf.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drsyms.dir/drsyms_elf.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_elf.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drsyms.dir/drsyms_elf.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_elf.c
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_elf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drsyms.dir/drsyms_elf.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_elf.c > CMakeFiles/drsyms.dir/drsyms_elf.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_elf.c > CMakeFiles/drsyms.dir/drsyms_elf.c.i
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_elf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drsyms.dir/drsyms_elf.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_elf.c -o CMakeFiles/drsyms.dir/drsyms_elf.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_elf.c -o CMakeFiles/drsyms.dir/drsyms_elf.c.s
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_elf.c.o.requires:
 .PHONY : ext/drsyms/CMakeFiles/drsyms.dir/drsyms_elf.c.o.requires
@@ -125,15 +125,15 @@ ext/drsyms/CMakeFiles/drsyms.dir/drsyms_dwarf.c.o: ext/drsyms/CMakeFiles/drsyms.
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_dwarf.c.o: ../ext/drsyms/drsyms_dwarf.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object ext/drsyms/CMakeFiles/drsyms.dir/drsyms_dwarf.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drsyms.dir/drsyms_dwarf.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_dwarf.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drsyms.dir/drsyms_dwarf.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_dwarf.c
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_dwarf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drsyms.dir/drsyms_dwarf.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_dwarf.c > CMakeFiles/drsyms.dir/drsyms_dwarf.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_dwarf.c > CMakeFiles/drsyms.dir/drsyms_dwarf.c.i
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_dwarf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drsyms.dir/drsyms_dwarf.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_dwarf.c -o CMakeFiles/drsyms.dir/drsyms_dwarf.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_dwarf.c -o CMakeFiles/drsyms.dir/drsyms_dwarf.c.s
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_dwarf.c.o.requires:
 .PHONY : ext/drsyms/CMakeFiles/drsyms.dir/drsyms_dwarf.c.o.requires
@@ -148,15 +148,15 @@ ext/drsyms/CMakeFiles/drsyms.dir/demangle.cc.o: ext/drsyms/CMakeFiles/drsyms.dir
 ext/drsyms/CMakeFiles/drsyms.dir/demangle.cc.o: ../ext/drsyms/demangle.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object ext/drsyms/CMakeFiles/drsyms.dir/demangle.cc.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drsyms.dir/demangle.cc.o -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/demangle.cc
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drsyms.dir/demangle.cc.o -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/demangle.cc
 
 ext/drsyms/CMakeFiles/drsyms.dir/demangle.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drsyms.dir/demangle.cc.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/demangle.cc > CMakeFiles/drsyms.dir/demangle.cc.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/demangle.cc > CMakeFiles/drsyms.dir/demangle.cc.i
 
 ext/drsyms/CMakeFiles/drsyms.dir/demangle.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drsyms.dir/demangle.cc.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/demangle.cc -o CMakeFiles/drsyms.dir/demangle.cc.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/demangle.cc -o CMakeFiles/drsyms.dir/demangle.cc.s
 
 ext/drsyms/CMakeFiles/drsyms.dir/demangle.cc.o.requires:
 .PHONY : ext/drsyms/CMakeFiles/drsyms.dir/demangle.cc.o.requires
@@ -171,15 +171,15 @@ ext/drsyms/CMakeFiles/drsyms.dir/drsyms_common.c.o: ext/drsyms/CMakeFiles/drsyms
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_common.c.o: ../ext/drsyms/drsyms_common.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object ext/drsyms/CMakeFiles/drsyms.dir/drsyms_common.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drsyms.dir/drsyms_common.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_common.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drsyms.dir/drsyms_common.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_common.c
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drsyms.dir/drsyms_common.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_common.c > CMakeFiles/drsyms.dir/drsyms_common.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_common.c > CMakeFiles/drsyms.dir/drsyms_common.c.i
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drsyms.dir/drsyms_common.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_common.c -o CMakeFiles/drsyms.dir/drsyms_common.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drsyms/drsyms_common.c -o CMakeFiles/drsyms.dir/drsyms_common.c.s
 
 ext/drsyms/CMakeFiles/drsyms.dir/drsyms_common.c.o.requires:
 .PHONY : ext/drsyms/CMakeFiles/drsyms.dir/drsyms_common.c.o.requires
@@ -202,25 +202,25 @@ drsyms_OBJECTS = \
 # External object files for target drsyms
 drsyms_EXTERNAL_OBJECTS =
 
-ext/lib64/release/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_linux.c.o
-ext/lib64/release/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_unix.c.o
-ext/lib64/release/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_elf.c.o
-ext/lib64/release/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_dwarf.c.o
-ext/lib64/release/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/demangle.cc.o
-ext/lib64/release/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_common.c.o
-ext/lib64/release/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/build.make
-ext/lib64/release/libdrsyms.so: lib64/release/libdynamorio.so.4.1
-ext/lib64/release/libdrsyms.so: ../ext/drsyms/libelftc/lib64/libdwarf.a
-ext/lib64/release/libdrsyms.so: ../ext/drsyms/libelftc/lib64/libelftc.a
-ext/lib64/release/libdrsyms.so: ../ext/drsyms/libelftc/lib64/libelf.a
-ext/lib64/release/libdrsyms.so: ext/lib64/release/libdrcontainers.a
-ext/lib64/release/libdrsyms.so: lib64/release/libdynamorio.so.4.1
-ext/lib64/release/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../lib64/release/libdrsyms.so"
+ext/lib64/debug/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_linux.c.o
+ext/lib64/debug/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_unix.c.o
+ext/lib64/debug/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_elf.c.o
+ext/lib64/debug/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_dwarf.c.o
+ext/lib64/debug/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/demangle.cc.o
+ext/lib64/debug/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_common.c.o
+ext/lib64/debug/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/build.make
+ext/lib64/debug/libdrsyms.so: lib64/debug/libdynamorio.so.4.1
+ext/lib64/debug/libdrsyms.so: ../ext/drsyms/libelftc/lib64/libdwarf.a
+ext/lib64/debug/libdrsyms.so: ../ext/drsyms/libelftc/lib64/libelftc.a
+ext/lib64/debug/libdrsyms.so: ../ext/drsyms/libelftc/lib64/libelf.a
+ext/lib64/debug/libdrsyms.so: ext/lib64/debug/libdrcontainers.a
+ext/lib64/debug/libdrsyms.so: lib64/debug/libdynamorio.so.4.1
+ext/lib64/debug/libdrsyms.so: ext/drsyms/CMakeFiles/drsyms.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../lib64/debug/libdrsyms.so"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drsyms && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drsyms.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ext/drsyms/CMakeFiles/drsyms.dir/build: ext/lib64/release/libdrsyms.so
+ext/drsyms/CMakeFiles/drsyms.dir/build: ext/lib64/debug/libdrsyms.so
 .PHONY : ext/drsyms/CMakeFiles/drsyms.dir/build
 
 ext/drsyms/CMakeFiles/drsyms.dir/requires: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_linux.c.o.requires

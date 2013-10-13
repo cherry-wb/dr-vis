@@ -213,7 +213,7 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 CUSTOM_PRODUCT_NAME:STRING=
 
 //Build with asserts and logging enabled (also controlled by CMAKE_BUILD_TYPE=Debug)
-DEBUG:BOOL=OFF
+DEBUG:BOOL=on
 
 //disable warnings
 DISABLE_WARNINGS:BOOL=OFF

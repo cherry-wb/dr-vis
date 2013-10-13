@@ -56,15 +56,15 @@ ext/drutil/CMakeFiles/drutil.dir/drutil.c.o: ext/drutil/CMakeFiles/drutil.dir/fl
 ext/drutil/CMakeFiles/drutil.dir/drutil.c.o: ../ext/drutil/drutil.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object ext/drutil/CMakeFiles/drutil.dir/drutil.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drutil && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drutil.dir/drutil.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drutil/drutil.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drutil && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drutil.dir/drutil.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drutil/drutil.c
 
 ext/drutil/CMakeFiles/drutil.dir/drutil.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drutil.dir/drutil.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drutil && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drutil/drutil.c > CMakeFiles/drutil.dir/drutil.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drutil && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drutil/drutil.c > CMakeFiles/drutil.dir/drutil.c.i
 
 ext/drutil/CMakeFiles/drutil.dir/drutil.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drutil.dir/drutil.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drutil && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drutil/drutil.c -o CMakeFiles/drutil.dir/drutil.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drutil && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drutil/drutil.c -o CMakeFiles/drutil.dir/drutil.c.s
 
 ext/drutil/CMakeFiles/drutil.dir/drutil.c.o.requires:
 .PHONY : ext/drutil/CMakeFiles/drutil.dir/drutil.c.o.requires
@@ -82,18 +82,18 @@ drutil_OBJECTS = \
 # External object files for target drutil
 drutil_EXTERNAL_OBJECTS =
 
-ext/lib64/release/libdrutil.so: ext/drutil/CMakeFiles/drutil.dir/drutil.c.o
-ext/lib64/release/libdrutil.so: ext/drutil/CMakeFiles/drutil.dir/build.make
-ext/lib64/release/libdrutil.so: lib64/release/libdynamorio.so.4.1
-ext/lib64/release/libdrutil.so: ext/lib64/release/libdrmgr.so
-ext/lib64/release/libdrutil.so: ext/lib64/release/libdrx.so
-ext/lib64/release/libdrutil.so: lib64/release/libdynamorio.so.4.1
-ext/lib64/release/libdrutil.so: ext/drutil/CMakeFiles/drutil.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../lib64/release/libdrutil.so"
+ext/lib64/debug/libdrutil.so: ext/drutil/CMakeFiles/drutil.dir/drutil.c.o
+ext/lib64/debug/libdrutil.so: ext/drutil/CMakeFiles/drutil.dir/build.make
+ext/lib64/debug/libdrutil.so: lib64/debug/libdynamorio.so.4.1
+ext/lib64/debug/libdrutil.so: ext/lib64/debug/libdrmgr.so
+ext/lib64/debug/libdrutil.so: ext/lib64/debug/libdrx.so
+ext/lib64/debug/libdrutil.so: lib64/debug/libdynamorio.so.4.1
+ext/lib64/debug/libdrutil.so: ext/drutil/CMakeFiles/drutil.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../lib64/debug/libdrutil.so"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drutil && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drutil.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ext/drutil/CMakeFiles/drutil.dir/build: ext/lib64/release/libdrutil.so
+ext/drutil/CMakeFiles/drutil.dir/build: ext/lib64/debug/libdrutil.so
 .PHONY : ext/drutil/CMakeFiles/drutil.dir/build
 
 ext/drutil/CMakeFiles/drutil.dir/requires: ext/drutil/CMakeFiles/drutil.dir/drutil.c.o.requires

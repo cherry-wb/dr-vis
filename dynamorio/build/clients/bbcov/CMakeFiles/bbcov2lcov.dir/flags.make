@@ -8,5 +8,5 @@ C_DEFINES =
 
 # TARGET_FLAGS =  -DX64 -DX64 -DX86_64 -DLINUX -DDYNAMORIO_STANDALONE
 
-# Custom flags: clients/bbcov/CMakeFiles/bbcov2lcov.dir/bbcov2lcov.c.o_FLAGS =  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable
+# Custom flags: clients/bbcov/CMakeFiles/bbcov2lcov.dir/bbcov2lcov.c.o_FLAGS =  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable
 

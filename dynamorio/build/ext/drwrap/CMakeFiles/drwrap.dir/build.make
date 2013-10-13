@@ -56,15 +56,15 @@ ext/drwrap/CMakeFiles/drwrap.dir/drwrap.c.o: ext/drwrap/CMakeFiles/drwrap.dir/fl
 ext/drwrap/CMakeFiles/drwrap.dir/drwrap.c.o: ../ext/drwrap/drwrap.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object ext/drwrap/CMakeFiles/drwrap.dir/drwrap.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drwrap && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -DASSEMBLE_WITH_GAS  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drwrap.dir/drwrap.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drwrap/drwrap.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drwrap && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -DASSEMBLE_WITH_GAS  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drwrap.dir/drwrap.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drwrap/drwrap.c
 
 ext/drwrap/CMakeFiles/drwrap.dir/drwrap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drwrap.dir/drwrap.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drwrap && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -DASSEMBLE_WITH_GAS  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drwrap/drwrap.c > CMakeFiles/drwrap.dir/drwrap.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drwrap && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -DASSEMBLE_WITH_GAS  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drwrap/drwrap.c > CMakeFiles/drwrap.dir/drwrap.c.i
 
 ext/drwrap/CMakeFiles/drwrap.dir/drwrap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drwrap.dir/drwrap.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drwrap && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -DASSEMBLE_WITH_GAS  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drwrap/drwrap.c -o CMakeFiles/drwrap.dir/drwrap.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drwrap && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -DASSEMBLE_WITH_GAS  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drwrap/drwrap.c -o CMakeFiles/drwrap.dir/drwrap.c.s
 
 ext/drwrap/CMakeFiles/drwrap.dir/drwrap.c.o.requires:
 .PHONY : ext/drwrap/CMakeFiles/drwrap.dir/drwrap.c.o.requires
@@ -83,7 +83,7 @@ ext/drwrap/CMakeFiles/drwrap.dir/drwrap_asm.asm.o: cmake/cpp2asm_defines.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building ASM object ext/drwrap/CMakeFiles/drwrap.dir/drwrap_asm.asm.o"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drwrap && /usr/bin/cpp  $(ASM_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -DASSEMBLE_WITH_GAS $(ASM_DEFINES) -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drwrap/drwrap_asm.asm -o CMakeFiles/drwrap.dir/drwrap_asm.asm.o.s
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drwrap && /usr/bin/cmake -Dfile=CMakeFiles/drwrap.dir/drwrap_asm.asm.o.s -P "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/make/CMake_asm.cmake"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drwrap && /usr/bin/as  -mmnemonic=intel -msyntax=intel -mnaked-reg --noexecstack --64 -o CMakeFiles/drwrap.dir/drwrap_asm.asm.o CMakeFiles/drwrap.dir/drwrap_asm.asm.o.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drwrap && /usr/bin/as  -mmnemonic=intel -msyntax=intel -mnaked-reg --noexecstack --64 -g -o CMakeFiles/drwrap.dir/drwrap_asm.asm.o CMakeFiles/drwrap.dir/drwrap_asm.asm.o.s
 
 ext/drwrap/CMakeFiles/drwrap.dir/drwrap_asm.asm.o.requires:
 .PHONY : ext/drwrap/CMakeFiles/drwrap.dir/drwrap_asm.asm.o.requires
@@ -102,20 +102,20 @@ drwrap_OBJECTS = \
 # External object files for target drwrap
 drwrap_EXTERNAL_OBJECTS =
 
-ext/lib64/release/libdrwrap.so: ext/drwrap/CMakeFiles/drwrap.dir/drwrap.c.o
-ext/lib64/release/libdrwrap.so: ext/drwrap/CMakeFiles/drwrap.dir/drwrap_asm.asm.o
-ext/lib64/release/libdrwrap.so: ext/drwrap/CMakeFiles/drwrap.dir/build.make
-ext/lib64/release/libdrwrap.so: lib64/release/libdynamorio.so.4.1
-ext/lib64/release/libdrwrap.so: ext/lib64/release/libdrmgr.so
-ext/lib64/release/libdrwrap.so: ext/lib64/release/libdrcontainers.a
-ext/lib64/release/libdrwrap.so: ext/lib64/release/libdrx.so
-ext/lib64/release/libdrwrap.so: lib64/release/libdynamorio.so.4.1
-ext/lib64/release/libdrwrap.so: ext/drwrap/CMakeFiles/drwrap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../lib64/release/libdrwrap.so"
+ext/lib64/debug/libdrwrap.so: ext/drwrap/CMakeFiles/drwrap.dir/drwrap.c.o
+ext/lib64/debug/libdrwrap.so: ext/drwrap/CMakeFiles/drwrap.dir/drwrap_asm.asm.o
+ext/lib64/debug/libdrwrap.so: ext/drwrap/CMakeFiles/drwrap.dir/build.make
+ext/lib64/debug/libdrwrap.so: lib64/debug/libdynamorio.so.4.1
+ext/lib64/debug/libdrwrap.so: ext/lib64/debug/libdrmgr.so
+ext/lib64/debug/libdrwrap.so: ext/lib64/debug/libdrcontainers.a
+ext/lib64/debug/libdrwrap.so: ext/lib64/debug/libdrx.so
+ext/lib64/debug/libdrwrap.so: lib64/debug/libdynamorio.so.4.1
+ext/lib64/debug/libdrwrap.so: ext/drwrap/CMakeFiles/drwrap.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../lib64/debug/libdrwrap.so"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drwrap && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drwrap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ext/drwrap/CMakeFiles/drwrap.dir/build: ext/lib64/release/libdrwrap.so
+ext/drwrap/CMakeFiles/drwrap.dir/build: ext/lib64/debug/libdrwrap.so
 .PHONY : ext/drwrap/CMakeFiles/drwrap.dir/build
 
 ext/drwrap/CMakeFiles/drwrap.dir/requires: ext/drwrap/CMakeFiles/drwrap.dir/drwrap.c.o.requires

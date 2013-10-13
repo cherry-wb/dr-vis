@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/drsyms_bench.dir/drsyms_bench.c.o"
-  "../lib64/release/drsyms_bench.pdb"
+  "../lib64/debug/drsyms_bench.pdb"
   "../drsyms_bench"
 )
 

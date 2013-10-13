@@ -56,9 +56,9 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/dynamorio.dir/unix/loader.c.o"
   "CMakeFiles/dynamorio.dir/unix/nudgesig.c.o"
   "CMakeFiles/dynamorio.dir/unix/native_elf.c.o"
-  "../lib64/release/libdynamorio.pdb"
-  "../lib64/release/libdynamorio.so"
-  "../lib64/release/libdynamorio.so.4.1"
+  "../lib64/debug/libdynamorio.pdb"
+  "../lib64/debug/libdynamorio.so"
+  "../lib64/debug/libdynamorio.so.4.1"
 )
 
 # Per-language clean rules from dependency scanning.

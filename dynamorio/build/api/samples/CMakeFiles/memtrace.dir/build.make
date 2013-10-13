@@ -56,15 +56,15 @@ api/samples/CMakeFiles/memtrace.dir/memtrace.c.o: api/samples/CMakeFiles/memtrac
 api/samples/CMakeFiles/memtrace.dir/memtrace.c.o: ../api/samples/memtrace.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object api/samples/CMakeFiles/memtrace.dir/memtrace.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2 -fno-stack-protector -o CMakeFiles/memtrace.dir/memtrace.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/memtrace.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DDEBUG -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/memtrace.dir/memtrace.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/memtrace.c
 
 api/samples/CMakeFiles/memtrace.dir/memtrace.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/memtrace.dir/memtrace.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2 -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/memtrace.c > CMakeFiles/memtrace.dir/memtrace.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DDEBUG -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/memtrace.c > CMakeFiles/memtrace.dir/memtrace.c.i
 
 api/samples/CMakeFiles/memtrace.dir/memtrace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/memtrace.dir/memtrace.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2 -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/memtrace.c -o CMakeFiles/memtrace.dir/memtrace.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DDEBUG -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/memtrace.c -o CMakeFiles/memtrace.dir/memtrace.c.s
 
 api/samples/CMakeFiles/memtrace.dir/memtrace.c.o.requires:
 .PHONY : api/samples/CMakeFiles/memtrace.dir/memtrace.c.o.requires
@@ -84,12 +84,12 @@ memtrace_EXTERNAL_OBJECTS =
 
 api/samples/bin/libmemtrace.so: api/samples/CMakeFiles/memtrace.dir/memtrace.c.o
 api/samples/bin/libmemtrace.so: api/samples/CMakeFiles/memtrace.dir/build.make
-api/samples/bin/libmemtrace.so: lib64/release/libdynamorio.so.4.1
-api/samples/bin/libmemtrace.so: ext/lib64/release/libdrmgr.so
-api/samples/bin/libmemtrace.so: ext/lib64/release/libdrutil.so
-api/samples/bin/libmemtrace.so: ext/lib64/release/libdrmgr.so
-api/samples/bin/libmemtrace.so: ext/lib64/release/libdrx.so
-api/samples/bin/libmemtrace.so: lib64/release/libdynamorio.so.4.1
+api/samples/bin/libmemtrace.so: lib64/debug/libdynamorio.so.4.1
+api/samples/bin/libmemtrace.so: ext/lib64/debug/libdrmgr.so
+api/samples/bin/libmemtrace.so: ext/lib64/debug/libdrutil.so
+api/samples/bin/libmemtrace.so: ext/lib64/debug/libdrmgr.so
+api/samples/bin/libmemtrace.so: ext/lib64/debug/libdrx.so
+api/samples/bin/libmemtrace.so: lib64/debug/libdynamorio.so.4.1
 api/samples/bin/libmemtrace.so: api/samples/CMakeFiles/memtrace.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library bin/libmemtrace.so"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/memtrace.dir/link.txt --verbose=$(VERBOSE)

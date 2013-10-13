@@ -56,15 +56,15 @@ api/samples/CMakeFiles/inc2add.dir/inc2add.c.o: api/samples/CMakeFiles/inc2add.d
 api/samples/CMakeFiles/inc2add.dir/inc2add.c.o: ../api/samples/inc2add.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object api/samples/CMakeFiles/inc2add.dir/inc2add.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2 -fno-stack-protector -o CMakeFiles/inc2add.dir/inc2add.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/inc2add.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DDEBUG -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/inc2add.dir/inc2add.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/inc2add.c
 
 api/samples/CMakeFiles/inc2add.dir/inc2add.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/inc2add.dir/inc2add.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2 -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/inc2add.c > CMakeFiles/inc2add.dir/inc2add.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DDEBUG -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/inc2add.c > CMakeFiles/inc2add.dir/inc2add.c.i
 
 api/samples/CMakeFiles/inc2add.dir/inc2add.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/inc2add.dir/inc2add.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2 -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/inc2add.c -o CMakeFiles/inc2add.dir/inc2add.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DDEBUG -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/api/samples/inc2add.c -o CMakeFiles/inc2add.dir/inc2add.c.s
 
 api/samples/CMakeFiles/inc2add.dir/inc2add.c.o.requires:
 .PHONY : api/samples/CMakeFiles/inc2add.dir/inc2add.c.o.requires
@@ -84,7 +84,7 @@ inc2add_EXTERNAL_OBJECTS =
 
 api/samples/bin/libinc2add.so: api/samples/CMakeFiles/inc2add.dir/inc2add.c.o
 api/samples/bin/libinc2add.so: api/samples/CMakeFiles/inc2add.dir/build.make
-api/samples/bin/libinc2add.so: lib64/release/libdynamorio.so.4.1
+api/samples/bin/libinc2add.so: lib64/debug/libdynamorio.so.4.1
 api/samples/bin/libinc2add.so: api/samples/CMakeFiles/inc2add.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library bin/libinc2add.so"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/inc2add.dir/link.txt --verbose=$(VERBOSE)

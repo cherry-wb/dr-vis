@@ -56,15 +56,15 @@ ext/drmgr/CMakeFiles/drmgr.dir/drmgr.c.o: ext/drmgr/CMakeFiles/drmgr.dir/flags.m
 ext/drmgr/CMakeFiles/drmgr.dir/drmgr.c.o: ../ext/drmgr/drmgr.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object ext/drmgr/CMakeFiles/drmgr.dir/drmgr.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drmgr && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drmgr.dir/drmgr.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drmgr/drmgr.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drmgr && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drmgr.dir/drmgr.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drmgr/drmgr.c
 
 ext/drmgr/CMakeFiles/drmgr.dir/drmgr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drmgr.dir/drmgr.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drmgr && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drmgr/drmgr.c > CMakeFiles/drmgr.dir/drmgr.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drmgr && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drmgr/drmgr.c > CMakeFiles/drmgr.dir/drmgr.c.i
 
 ext/drmgr/CMakeFiles/drmgr.dir/drmgr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drmgr.dir/drmgr.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drmgr && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drmgr/drmgr.c -o CMakeFiles/drmgr.dir/drmgr.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drmgr && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drmgr/drmgr.c -o CMakeFiles/drmgr.dir/drmgr.c.s
 
 ext/drmgr/CMakeFiles/drmgr.dir/drmgr.c.o.requires:
 .PHONY : ext/drmgr/CMakeFiles/drmgr.dir/drmgr.c.o.requires
@@ -82,17 +82,17 @@ drmgr_OBJECTS = \
 # External object files for target drmgr
 drmgr_EXTERNAL_OBJECTS =
 
-ext/lib64/release/libdrmgr.so: ext/drmgr/CMakeFiles/drmgr.dir/drmgr.c.o
-ext/lib64/release/libdrmgr.so: ext/drmgr/CMakeFiles/drmgr.dir/build.make
-ext/lib64/release/libdrmgr.so: lib64/release/libdynamorio.so.4.1
-ext/lib64/release/libdrmgr.so: ext/lib64/release/libdrx.so
-ext/lib64/release/libdrmgr.so: lib64/release/libdynamorio.so.4.1
-ext/lib64/release/libdrmgr.so: ext/drmgr/CMakeFiles/drmgr.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../lib64/release/libdrmgr.so"
+ext/lib64/debug/libdrmgr.so: ext/drmgr/CMakeFiles/drmgr.dir/drmgr.c.o
+ext/lib64/debug/libdrmgr.so: ext/drmgr/CMakeFiles/drmgr.dir/build.make
+ext/lib64/debug/libdrmgr.so: lib64/debug/libdynamorio.so.4.1
+ext/lib64/debug/libdrmgr.so: ext/lib64/debug/libdrx.so
+ext/lib64/debug/libdrmgr.so: lib64/debug/libdynamorio.so.4.1
+ext/lib64/debug/libdrmgr.so: ext/drmgr/CMakeFiles/drmgr.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../lib64/debug/libdrmgr.so"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drmgr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drmgr.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ext/drmgr/CMakeFiles/drmgr.dir/build: ext/lib64/release/libdrmgr.so
+ext/drmgr/CMakeFiles/drmgr.dir/build: ext/lib64/debug/libdrmgr.so
 .PHONY : ext/drmgr/CMakeFiles/drmgr.dir/build
 
 ext/drmgr/CMakeFiles/drmgr.dir/requires: ext/drmgr/CMakeFiles/drmgr.dir/drmgr.c.o.requires

@@ -13,15 +13,15 @@ CXX_DEFINES = -Ddrsyms_EXPORTS
 
 # TARGET_FLAGS =  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC -fno-exceptions
 
-# Custom flags: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_linux.c.o_FLAGS =  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
+# Custom flags: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_linux.c.o_FLAGS =  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
 
-# Custom flags: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_unix.c.o_FLAGS =  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
+# Custom flags: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_unix.c.o_FLAGS =  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
 
-# Custom flags: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_elf.c.o_FLAGS =  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
+# Custom flags: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_elf.c.o_FLAGS =  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
 
-# Custom flags: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_dwarf.c.o_FLAGS =  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
+# Custom flags: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_dwarf.c.o_FLAGS =  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
 
-# Custom flags: ext/drsyms/CMakeFiles/drsyms.dir/demangle.cc.o_FLAGS =  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
+# Custom flags: ext/drsyms/CMakeFiles/drsyms.dir/demangle.cc.o_FLAGS =  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
 
-# Custom flags: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_common.c.o_FLAGS =  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
+# Custom flags: ext/drsyms/CMakeFiles/drsyms.dir/drsyms_common.c.o_FLAGS =  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
 

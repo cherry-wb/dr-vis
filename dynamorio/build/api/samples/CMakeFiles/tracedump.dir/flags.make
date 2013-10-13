@@ -6,7 +6,7 @@ C_FLAGS =     -I/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build -I/home/
 
 C_DEFINES = -DSHOW_RESULTS -DSHOW_SYMBOLS
 
-# TARGET_FLAGS =  -DX86_64 -DLINUX -DDYNAMORIO_STANDALONE
+# TARGET_FLAGS =  -DDEBUG -DX86_64 -DLINUX -DDYNAMORIO_STANDALONE
 
-# Custom flags: api/samples/CMakeFiles/tracedump.dir/tracedump.c.o_FLAGS =  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2
+# Custom flags: api/samples/CMakeFiles/tracedump.dir/tracedump.c.o_FLAGS =  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable
 

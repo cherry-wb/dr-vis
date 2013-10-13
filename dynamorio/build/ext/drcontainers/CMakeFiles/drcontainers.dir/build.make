@@ -56,15 +56,15 @@ ext/drcontainers/CMakeFiles/drcontainers.dir/hashtable.c.o: ext/drcontainers/CMa
 ext/drcontainers/CMakeFiles/drcontainers.dir/hashtable.c.o: ../ext/drcontainers/hashtable.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object ext/drcontainers/CMakeFiles/drcontainers.dir/hashtable.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drcontainers.dir/hashtable.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/hashtable.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drcontainers.dir/hashtable.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/hashtable.c
 
 ext/drcontainers/CMakeFiles/drcontainers.dir/hashtable.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drcontainers.dir/hashtable.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/hashtable.c > CMakeFiles/drcontainers.dir/hashtable.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/hashtable.c > CMakeFiles/drcontainers.dir/hashtable.c.i
 
 ext/drcontainers/CMakeFiles/drcontainers.dir/hashtable.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drcontainers.dir/hashtable.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/hashtable.c -o CMakeFiles/drcontainers.dir/hashtable.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/hashtable.c -o CMakeFiles/drcontainers.dir/hashtable.c.s
 
 ext/drcontainers/CMakeFiles/drcontainers.dir/hashtable.c.o.requires:
 .PHONY : ext/drcontainers/CMakeFiles/drcontainers.dir/hashtable.c.o.requires
@@ -79,15 +79,15 @@ ext/drcontainers/CMakeFiles/drcontainers.dir/drvector.c.o: ext/drcontainers/CMak
 ext/drcontainers/CMakeFiles/drcontainers.dir/drvector.c.o: ../ext/drcontainers/drvector.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object ext/drcontainers/CMakeFiles/drcontainers.dir/drvector.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drcontainers.dir/drvector.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/drvector.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drcontainers.dir/drvector.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/drvector.c
 
 ext/drcontainers/CMakeFiles/drcontainers.dir/drvector.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drcontainers.dir/drvector.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/drvector.c > CMakeFiles/drcontainers.dir/drvector.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/drvector.c > CMakeFiles/drcontainers.dir/drvector.c.i
 
 ext/drcontainers/CMakeFiles/drcontainers.dir/drvector.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drcontainers.dir/drvector.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/drvector.c -o CMakeFiles/drcontainers.dir/drvector.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/drvector.c -o CMakeFiles/drcontainers.dir/drvector.c.s
 
 ext/drcontainers/CMakeFiles/drcontainers.dir/drvector.c.o.requires:
 .PHONY : ext/drcontainers/CMakeFiles/drcontainers.dir/drvector.c.o.requires
@@ -102,15 +102,15 @@ ext/drcontainers/CMakeFiles/drcontainers.dir/drtable.c.o: ext/drcontainers/CMake
 ext/drcontainers/CMakeFiles/drcontainers.dir/drtable.c.o: ../ext/drcontainers/drtable.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object ext/drcontainers/CMakeFiles/drcontainers.dir/drtable.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drcontainers.dir/drtable.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/drtable.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/drcontainers.dir/drtable.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/drtable.c
 
 ext/drcontainers/CMakeFiles/drcontainers.dir/drtable.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drcontainers.dir/drtable.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/drtable.c > CMakeFiles/drcontainers.dir/drtable.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/drtable.c > CMakeFiles/drcontainers.dir/drtable.c.i
 
 ext/drcontainers/CMakeFiles/drcontainers.dir/drtable.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drcontainers.dir/drtable.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/drtable.c -o CMakeFiles/drcontainers.dir/drtable.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/ext/drcontainers/drtable.c -o CMakeFiles/drcontainers.dir/drtable.c.s
 
 ext/drcontainers/CMakeFiles/drcontainers.dir/drtable.c.o.requires:
 .PHONY : ext/drcontainers/CMakeFiles/drcontainers.dir/drtable.c.o.requires
@@ -130,17 +130,17 @@ drcontainers_OBJECTS = \
 # External object files for target drcontainers
 drcontainers_EXTERNAL_OBJECTS =
 
-ext/lib64/release/libdrcontainers.a: ext/drcontainers/CMakeFiles/drcontainers.dir/hashtable.c.o
-ext/lib64/release/libdrcontainers.a: ext/drcontainers/CMakeFiles/drcontainers.dir/drvector.c.o
-ext/lib64/release/libdrcontainers.a: ext/drcontainers/CMakeFiles/drcontainers.dir/drtable.c.o
-ext/lib64/release/libdrcontainers.a: ext/drcontainers/CMakeFiles/drcontainers.dir/build.make
-ext/lib64/release/libdrcontainers.a: ext/drcontainers/CMakeFiles/drcontainers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C static library ../lib64/release/libdrcontainers.a"
+ext/lib64/debug/libdrcontainers.a: ext/drcontainers/CMakeFiles/drcontainers.dir/hashtable.c.o
+ext/lib64/debug/libdrcontainers.a: ext/drcontainers/CMakeFiles/drcontainers.dir/drvector.c.o
+ext/lib64/debug/libdrcontainers.a: ext/drcontainers/CMakeFiles/drcontainers.dir/drtable.c.o
+ext/lib64/debug/libdrcontainers.a: ext/drcontainers/CMakeFiles/drcontainers.dir/build.make
+ext/lib64/debug/libdrcontainers.a: ext/drcontainers/CMakeFiles/drcontainers.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C static library ../lib64/debug/libdrcontainers.a"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && $(CMAKE_COMMAND) -P CMakeFiles/drcontainers.dir/cmake_clean_target.cmake
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/ext/drcontainers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drcontainers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ext/drcontainers/CMakeFiles/drcontainers.dir/build: ext/lib64/release/libdrcontainers.a
+ext/drcontainers/CMakeFiles/drcontainers.dir/build: ext/lib64/debug/libdrcontainers.a
 .PHONY : ext/drcontainers/CMakeFiles/drcontainers.dir/build
 
 ext/drcontainers/CMakeFiles/drcontainers.dir/requires: ext/drcontainers/CMakeFiles/drcontainers.dir/hashtable.c.o.requires

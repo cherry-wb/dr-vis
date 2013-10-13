@@ -268,7 +268,7 @@ core/CMakeFiles/drdecode.dir/x86/x86.asm.o: configure.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building ASM object core/CMakeFiles/drdecode.dir/x86/x86.asm.o"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && /usr/bin/cpp  $(ASM_FLAGS) -DNOT_DYNAMORIO_CORE_PROPER -DSTANDALONE_DECODER -fPIC $(ASM_DEFINES) -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/core/x86/x86.asm -o CMakeFiles/drdecode.dir/x86/x86.asm.o.s
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && /usr/bin/cmake -Dfile=CMakeFiles/drdecode.dir/x86/x86.asm.o.s -P "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/make/CMake_asm.cmake"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && /usr/bin/as  -mmnemonic=intel -msyntax=intel -mnaked-reg --noexecstack --64 -o CMakeFiles/drdecode.dir/x86/x86.asm.o CMakeFiles/drdecode.dir/x86/x86.asm.o.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/core && /usr/bin/as  -mmnemonic=intel -msyntax=intel -mnaked-reg --noexecstack --64 -g -o CMakeFiles/drdecode.dir/x86/x86.asm.o CMakeFiles/drdecode.dir/x86/x86.asm.o.s
 
 core/CMakeFiles/drdecode.dir/x86/x86.asm.o.requires:
 .PHONY : core/CMakeFiles/drdecode.dir/x86/x86.asm.o.requires

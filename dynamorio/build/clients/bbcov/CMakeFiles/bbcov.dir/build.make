@@ -56,15 +56,15 @@ clients/bbcov/CMakeFiles/bbcov.dir/bbcov.c.o: clients/bbcov/CMakeFiles/bbcov.dir
 clients/bbcov/CMakeFiles/bbcov.dir/bbcov.c.o: ../clients/bbcov/bbcov.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object clients/bbcov/CMakeFiles/bbcov.dir/bbcov.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/bbcov.dir/bbcov.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/clients/bbcov/bbcov.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/bbcov.dir/bbcov.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/clients/bbcov/bbcov.c
 
 clients/bbcov/CMakeFiles/bbcov.dir/bbcov.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bbcov.dir/bbcov.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/clients/bbcov/bbcov.c > CMakeFiles/bbcov.dir/bbcov.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/clients/bbcov/bbcov.c > CMakeFiles/bbcov.dir/bbcov.c.i
 
 clients/bbcov/CMakeFiles/bbcov.dir/bbcov.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bbcov.dir/bbcov.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/clients/bbcov/bbcov.c -o CMakeFiles/bbcov.dir/bbcov.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/clients/bbcov/bbcov.c -o CMakeFiles/bbcov.dir/bbcov.c.s
 
 clients/bbcov/CMakeFiles/bbcov.dir/bbcov.c.o.requires:
 .PHONY : clients/bbcov/CMakeFiles/bbcov.dir/bbcov.c.o.requires
@@ -79,15 +79,15 @@ clients/bbcov/CMakeFiles/bbcov.dir/__/common/modules.c.o: clients/bbcov/CMakeFil
 clients/bbcov/CMakeFiles/bbcov.dir/__/common/modules.c.o: ../clients/common/modules.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object clients/bbcov/CMakeFiles/bbcov.dir/__/common/modules.c.o"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/bbcov.dir/__/common/modules.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/clients/common/modules.c
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -o CMakeFiles/bbcov.dir/__/common/modules.c.o   -c /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/clients/common/modules.c
 
 clients/bbcov/CMakeFiles/bbcov.dir/__/common/modules.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bbcov.dir/__/common/modules.c.i"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/clients/common/modules.c > CMakeFiles/bbcov.dir/__/common/modules.c.i
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -E /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/clients/common/modules.c > CMakeFiles/bbcov.dir/__/common/modules.c.i
 
 clients/bbcov/CMakeFiles/bbcov.dir/__/common/modules.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bbcov.dir/__/common/modules.c.s"
-	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/clients/common/modules.c -o CMakeFiles/bbcov.dir/__/common/modules.c.s
+	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector -S /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/clients/common/modules.c -o CMakeFiles/bbcov.dir/__/common/modules.c.s
 
 clients/bbcov/CMakeFiles/bbcov.dir/__/common/modules.c.o.requires:
 .PHONY : clients/bbcov/CMakeFiles/bbcov.dir/__/common/modules.c.o.requires
@@ -106,21 +106,21 @@ bbcov_OBJECTS = \
 # External object files for target bbcov
 bbcov_EXTERNAL_OBJECTS =
 
-clients/lib64/release/libbbcov.so: clients/bbcov/CMakeFiles/bbcov.dir/bbcov.c.o
-clients/lib64/release/libbbcov.so: clients/bbcov/CMakeFiles/bbcov.dir/__/common/modules.c.o
-clients/lib64/release/libbbcov.so: clients/bbcov/CMakeFiles/bbcov.dir/build.make
-clients/lib64/release/libbbcov.so: lib64/release/libdynamorio.so.4.1
-clients/lib64/release/libbbcov.so: ext/lib64/release/libdrmgr.so
-clients/lib64/release/libbbcov.so: ext/lib64/release/libdrcontainers.a
-clients/lib64/release/libbbcov.so: ext/lib64/release/libdrx.so
-clients/lib64/release/libbbcov.so: lib64/release/libdynamorio.so.4.1
-clients/lib64/release/libbbcov.so: clients/bbcov/CMakeFiles/bbcov.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../lib64/release/libbbcov.so"
+clients/lib64/debug/libbbcov.so: clients/bbcov/CMakeFiles/bbcov.dir/bbcov.c.o
+clients/lib64/debug/libbbcov.so: clients/bbcov/CMakeFiles/bbcov.dir/__/common/modules.c.o
+clients/lib64/debug/libbbcov.so: clients/bbcov/CMakeFiles/bbcov.dir/build.make
+clients/lib64/debug/libbbcov.so: lib64/debug/libdynamorio.so.4.1
+clients/lib64/debug/libbbcov.so: ext/lib64/debug/libdrmgr.so
+clients/lib64/debug/libbbcov.so: ext/lib64/debug/libdrcontainers.a
+clients/lib64/debug/libbbcov.so: ext/lib64/debug/libdrx.so
+clients/lib64/debug/libbbcov.so: lib64/debug/libdynamorio.so.4.1
+clients/lib64/debug/libbbcov.so: clients/bbcov/CMakeFiles/bbcov.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../lib64/debug/libbbcov.so"
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bbcov.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov && /usr/bin/cmake -E echo "Usage: pass to drconfig or drrun: -t bbcov"
 
 # Rule to build all files generated by this target.
-clients/bbcov/CMakeFiles/bbcov.dir/build: clients/lib64/release/libbbcov.so
+clients/bbcov/CMakeFiles/bbcov.dir/build: clients/lib64/debug/libbbcov.so
 .PHONY : clients/bbcov/CMakeFiles/bbcov.dir/build
 
 clients/bbcov/CMakeFiles/bbcov.dir/requires: clients/bbcov/CMakeFiles/bbcov.dir/bbcov.c.o.requires

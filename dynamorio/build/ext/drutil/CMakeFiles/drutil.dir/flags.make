@@ -8,5 +8,5 @@ C_DEFINES = -Ddrutil_EXPORTS
 
 # TARGET_FLAGS =  -DX64 -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fPIC
 
-# Custom flags: ext/drutil/CMakeFiles/drutil.dir/drutil.c.o_FLAGS =  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
+# Custom flags: ext/drutil/CMakeFiles/drutil.dir/drutil.c.o_FLAGS =  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
 

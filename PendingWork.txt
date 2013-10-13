@@ -18,3 +18,9 @@ Future Work to be Done
 - add necessary code to combine all the open source snippets together, add code that is needed on this platform level
 
 - build off of this platform to produce a program that has output (program walkthrough breakpoints, 'mapping' of the processes --> details of these internal stages) that will work as input for the visualization element of the project
+
+
+October 6th, 2013
+
+Running with 
+./bin64/drrun -c [path to dr-vis] /dr-vis/dynamorio/build/api/samples/bin/libbbbuf.so -- ls

@@ -2,6 +2,6 @@
 # DynamoRIO options
 DR_OP=-nop_initial_bblock
 # client tool path
-CLIENT_REL=tools/lib64/release/libbbcov.so
+CLIENT_REL=tools/lib64/debug/libbbcov.so
 # client tool options
 TOOL_OP=

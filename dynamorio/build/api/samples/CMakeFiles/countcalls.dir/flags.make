@@ -6,7 +6,7 @@ C_FLAGS =     -fPIC -I/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build -I
 
 C_DEFINES = -DSHOW_RESULTS -DSHOW_SYMBOLS -Dcountcalls_EXPORTS
 
-# TARGET_FLAGS =  -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES
+# TARGET_FLAGS =  -DDEBUG -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES
 
-# Custom flags: api/samples/CMakeFiles/countcalls.dir/countcalls.c.o_FLAGS =  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2 -fno-stack-protector
+# Custom flags: api/samples/CMakeFiles/countcalls.dir/countcalls.c.o_FLAGS =  -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
 

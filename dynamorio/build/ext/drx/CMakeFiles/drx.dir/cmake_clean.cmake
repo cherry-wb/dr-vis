@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/drx.dir/drx.c.o"
-  "../lib64/release/libdrx.pdb"
-  "../lib64/release/libdrx.so"
+  "../lib64/debug/libdrx.pdb"
+  "../lib64/debug/libdrx.so"
 )
 
 # Per-language clean rules from dependency scanning.

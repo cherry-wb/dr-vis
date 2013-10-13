@@ -147,8 +147,8 @@ clean: core/CMakeFiles/drdecode.dir/clean
 # Target rules for target core/CMakeFiles/drinjectlib.dir
 
 # All Build rule for target.
-core/CMakeFiles/drinjectlib.dir/all: core/CMakeFiles/drdecode.dir/all
 core/CMakeFiles/drinjectlib.dir/all: core/CMakeFiles/generate_syslog.dir/all
+core/CMakeFiles/drinjectlib.dir/all: core/CMakeFiles/drdecode.dir/all
 	$(MAKE) -f core/CMakeFiles/drinjectlib.dir/build.make core/CMakeFiles/drinjectlib.dir/depend
 	$(MAKE) -f core/CMakeFiles/drinjectlib.dir/build.make core/CMakeFiles/drinjectlib.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles  22 23 24 25 26
@@ -218,8 +218,8 @@ clean: core/CMakeFiles/drpreload.dir/clean
 # Target rules for target core/CMakeFiles/dynamorio.dir
 
 # All Build rule for target.
-core/CMakeFiles/dynamorio.dir/all: CMakeFiles/api_headers.dir/all
 core/CMakeFiles/dynamorio.dir/all: core/CMakeFiles/generate_syslog.dir/all
+core/CMakeFiles/dynamorio.dir/all: CMakeFiles/api_headers.dir/all
 	$(MAKE) -f core/CMakeFiles/dynamorio.dir/build.make core/CMakeFiles/dynamorio.dir/depend
 	$(MAKE) -f core/CMakeFiles/dynamorio.dir/build.make core/CMakeFiles/dynamorio.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles  41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84
@@ -1463,8 +1463,8 @@ clean: api/samples/CMakeFiles/instrcalls.dir/clean
 api/samples/CMakeFiles/memtrace.dir/all: core/CMakeFiles/dynamorio.dir/all
 api/samples/CMakeFiles/memtrace.dir/all: CMakeFiles/api_headers.dir/all
 api/samples/CMakeFiles/memtrace.dir/all: ext/drx/CMakeFiles/drx.dir/all
-api/samples/CMakeFiles/memtrace.dir/all: ext/drmgr/CMakeFiles/drmgr.dir/all
 api/samples/CMakeFiles/memtrace.dir/all: ext/drutil/CMakeFiles/drutil.dir/all
+api/samples/CMakeFiles/memtrace.dir/all: ext/drmgr/CMakeFiles/drmgr.dir/all
 	$(MAKE) -f api/samples/CMakeFiles/memtrace.dir/build.make api/samples/CMakeFiles/memtrace.dir/depend
 	$(MAKE) -f api/samples/CMakeFiles/memtrace.dir/build.make api/samples/CMakeFiles/memtrace.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/CMakeFiles 

@@ -6,7 +6,7 @@ CXX_FLAGS =     -fPIC -I/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build 
 
 CXX_DEFINES = -DSHOW_RESULTS -DSHOW_SYMBOLS -Dstl_test_EXPORTS
 
-# TARGET_FLAGS =  -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES
+# TARGET_FLAGS =  -DDEBUG -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES
 
-# Custom flags: api/samples/CMakeFiles/stl_test.dir/stl_test.cpp.o_FLAGS =  -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2 -fno-stack-protector
+# Custom flags: api/samples/CMakeFiles/stl_test.dir/stl_test.cpp.o_FLAGS =  -m64 -fvisibility=internal -g3 -fno-omit-frame-pointer -fno-builtin-strcmp -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -fno-stack-protector
 
