@@ -23,4 +23,5 @@ Future Work to be Done
 October 6th, 2013
 
 Running with 
-./bin64/drrun -c [path to dr-vis] /dr-vis/dynamorio/build/api/samples/bin/libbbbuf.so -- ls
+cd build
+./bin64/drrun -c /api/samples/bin/libbbbuf.so -- ls

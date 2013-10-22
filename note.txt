@@ -1,0 +1,43 @@
+Plugin returns lots of code: in this code is the original source (in AT&T)
+
+Target code with basic.S:
+
+0x00007f897c5eab81	call   %rax %rsp -> %rsp 0xfffffff8(%rsp) 
+
+#Our code
+0x00000000004004b0	xor    %eax %eax -> %eax 
+0x00000000004004b0	inc    %eax -> %eax 
+0x00000000004004b0	inc    %eax -> %eax 
+0x00000000004004b0	inc    %eax -> %eax 
+0x00000000004004b0	ret    %rsp (%rsp) -> %rsp 
+
+
+0x00007f897c5eabc5	mov    %eax -> %edi 
+
+for basic2.S
+0x00007fcfc6068b81	call   %rax %rsp -> %rsp 0xfffffff8(%rsp) 
+
+#our code
+0x00000000004004b7	xor    %ebx %ebx -> %ebx 
+0x00000000004004b7	inc    %ebx -> %ebx 
+0x00000000004004b7	inc    %ebx -> %ebx 
+0x00000000004004b7	call   $0x00000000004004b0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004b0	xor    %eax %eax -> %eax 
+0x00000000004004b0	inc    %eax -> %eax 
+0x00000000004004b0	inc    %eax -> %eax 
+0x00000000004004b0	ret    %rsp (%rsp) -> %rsp 
+0x00000000004004c2	ret    %rsp (%rsp) -> %rsp 
+
+
+0x00007fcfc6068bc5	mov    %eax -> %edi 
+
+
+
+Program entry point at 0x4004b0
+
+
+
+Non-program code is at 
+0x00007
+0x000000007
+0x00000000004
