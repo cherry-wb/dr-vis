@@ -25,3 +25,8 @@ October 6th, 2013
 Running with 
 cd build
 ./bin64/drrun -c /api/samples/bin/libbbbuf.so -- ls
+
+
+October 29
+Need to determine start/end address of program to filter
+	For .exe files, it's in the PE Header. For .o (linux) files, it's in the ELF Header
