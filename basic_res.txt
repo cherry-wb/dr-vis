@@ -1,0 +1,1525 @@
+0x00007f86b01f77b8	add    $0x0000000000000028 %rsp -> %rsp 
+0x00007f86b01f77b8	xor    %eax %eax -> %eax 
+0x00007f86b01f77b8	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86b01f77b8	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86b01f77b8	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040f8ad	mov    0x00000108(%rbx) -> %rdx 
+0x00007f86b040f8ad	test   %rdx %rdx 
+0x00007f86b040f8ad	jz     $0x00007f86b040f8f3 
+0x00007f86b040f8f3	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86b040f8f3	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86b040f8f3	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86b040f8f3	pop    %rsp (%rsp) -> %r13 %rsp 
+0x00007f86b040f8f3	pop    %rsp (%rsp) -> %r14 %rsp 
+0x00007f86b040f8f3	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040f9d3	jmp    $0x00007f86b040f9a8 
+0x00007f86b040f9a8	sub    $0x00000001 %ebx -> %ebx 
+0x00007f86b040f9a8	cmp    %ebx $0xffffffff 
+0x00007f86b040f9a8	jz     $0x00007f86b040f9d8 
+0x00007f86b040f9b0	mov    0x000003b8(%r14) -> %rax 
+0x00007f86b040f9b0	mov    %ebx -> %edx 
+0x00007f86b040f9b0	mov    (%rax,%rdx,8) -> %rdi 
+0x00007f86b040f9b0	test   0x00000314(%rdi) $0x08 
+0x00007f86b040f9b0	jnz    $0x00007f86b040f9a8 
+0x00007f86b040f9c6	mov    %r13 -> %rcx 
+0x00007f86b040f9c6	mov    %r12 -> %rdx 
+0x00007f86b040f9c6	mov    %ebp -> %esi 
+0x00007f86b040f9c6	call   $0x00007f86b040f850 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040f850	push   %r14 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040f850	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040f850	mov    %rcx -> %r13 
+0x00007f86b040f850	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040f850	mov    %rdx -> %r12 
+0x00007f86b040f850	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040f850	mov    %esi -> %ebp 
+0x00007f86b040f850	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040f850	movzx  0x00000314(%rdi) -> %eax 
+0x00007f86b040f850	mov    %rdi -> %rbx 
+0x00007f86b040f850	mov    0x08(%rdi) -> %rcx 
+0x00007f86b040f850	or     $0x00000008 %eax -> %eax 
+0x00007f86b040f850	mov    %al -> 0x00000314(%rdi) 
+0x00007f86b040f850	movzx  (%rcx) -> %edx 
+0x00007f86b040f850	test   %dl %dl 
+0x00007f86b040f850	jz     $0x00007f86b040f94c 
+0x00007f86b040f882	mov    0x000000a0(%rbx) -> %rax 
+0x00007f86b040f882	test   %rax %rax 
+0x00007f86b040f882	jz     $0x00007f86b040f900 
+0x00007f86b040f88e	test   <rel> 0x00007f86b0620c60 $0x02 
+0x00007f86b040f88e	jnz    $0x00007f86b040f913 
+0x00007f86b040f897	test   %rax %rax 
+0x00007f86b040f897	jz     $0x00007f86b040f8ad 
+0x00007f86b040f89c	mov    0x08(%rax) -> %rax 
+0x00007f86b040f89c	add    (%rbx) %rax -> %rax 
+0x00007f86b040f89c	mov    %r13 -> %rdx 
+0x00007f86b040f89c	mov    %r12 -> %rsi 
+0x00007f86b040f89c	mov    %ebp -> %edi 
+0x00007f86b040f89c	call   %rax %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000071110190	mov    <rel> 0x00000000713ad138 -> %rcx 
+0x0000000071110190	test   %rcx %rcx 
+0x0000000071110190	jz     $0x0000000071110210 
+0x000000007111019c	mov    (%rcx) -> %rax 
+0x000000007111019c	test   %rax %rax 
+0x000000007111019c	jz     $0x00000000711101d8 
+0x00000000711101a4	lea    0x08(%rcx) -> %rdx 
+0x00000000711101a4	lea    <rel> 0x000000007113ea1c -> %r10 
+0x00000000711101a4	mov    $0x0000001a -> %r9d 
+0x00000000711101a4	nop    (%rax) 
+0x00000000711101a4	mov    %rax -> %rsi 
+0x00000000711101a4	mov    %r10 -> %rdi 
+0x00000000711101a4	mov    %r9 -> %rcx 
+0x00000000711101a4	rep cmps %ds:(%rsi) %es:(%rdi) %rsi %rdi %rcx -> %rsi %rdi %rcx 
+0x00000000711101a4	jnz    $0x00000000711101cb 
+0x00000000711101cb	add    $0x0000000000000008 %rdx -> %rdx 
+0x00000000711101cb	mov    0xfffffff8(%rdx) -> %rax 
+0x00000000711101cb	test   %rax %rax 
+0x00000000711101cb	jnz    $0x00000000711101b8 
+0x00000000711101b8	mov    %rax -> %rsi 
+0x00000000711101b8	mov    %r10 -> %rdi 
+0x00000000711101b8	mov    %r9 -> %rcx 
+0x00000000711101b8	rep cmps %ds:(%rsi) %es:(%rdi) %rsi %rdi %rcx -> %rsi %rdi %rcx 
+0x00000000711101b8	jnz    $0x00000000711101cb 
+0x00000000711101d8	xor    %eax %eax -> %eax 
+0x00000000711101d8	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040f94c	test   %al $0x03 
+0x00007f86b040f94c	jnz    $0x00007f86b040f882 
+0x00007f86b040f954	jmp    $0x00007f86b040f8f3 
+0x00007f86b040f9d8	add    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86b040f9d8	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86b040f9d8	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86b040f9d8	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86b040f9d8	pop    %rsp (%rsp) -> %r13 %rsp 
+0x00007f86b040f9d8	pop    %rsp (%rsp) -> %r14 %rsp 
+0x00007f86b040f9d8	pop    %rsp (%rsp) -> %r15 %rsp 
+0x00007f86b040f9d8	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b04022aa	lea    <rel> 0x00007f86b040fd10 -> %rdx 
+0x00007f86b04022aa	mov    %r13 -> %rsp 
+0x00007f86b04022aa	jmp    %r12 
+0x00000000004003c0	xor    %ebp %ebp -> %ebp 
+0x00000000004003c0	mov    %rdx -> %r9 
+0x00000000004003c0	pop    %rsp (%rsp) -> %rsi %rsp 
+0x00000000004003c0	mov    %rsp -> %rdx 
+0x00000000004003c0	and    $0xfffffffffffffff0 %rsp -> %rsp 
+0x00000000004003c0	push   %rax %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004003c0	push   %rsp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004003c0	mov    $0x00400530 -> %r8 
+0x00000000004003c0	mov    $0x004004c0 -> %rcx 
+0x00000000004003c0	mov    $0x004004b0 -> %rdi 
+0x00000000004003c0	call   $0x00000000004003a0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004003a0	jmp    <rel> 0x0000000000600850 
+0x00000000004003a6	push   $0x0000000000000000 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004003a6	jmp    $0x0000000000400390 
+0x0000000000400390	push   <rel> 0x0000000000600840 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000000400390	jmp    <rel> 0x0000000000600848 
+0x00007f86b04151f0	sub    $0x0000000000000038 %rsp -> %rsp 
+0x00007f86b04151f0	mov    %rax -> (%rsp) 
+0x00007f86b04151f0	mov    %rcx -> 0x08(%rsp) 
+0x00007f86b04151f0	mov    %rdx -> 0x10(%rsp) 
+0x00007f86b04151f0	mov    %rsi -> 0x18(%rsp) 
+0x00007f86b04151f0	mov    %rdi -> 0x20(%rsp) 
+0x00007f86b04151f0	mov    %r8 -> 0x28(%rsp) 
+0x00007f86b04151f0	mov    %r9 -> 0x30(%rsp) 
+0x00007f86b04151f0	mov    0x40(%rsp) -> %rsi 
+0x00007f86b04151f0	mov    0x38(%rsp) -> %rdi 
+0x00007f86b04151f0	call   $0x00007f86b040ec00 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040ec00	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040ec00	mov    %rdi -> %rax 
+0x00007f86b040ec00	mov    %esi -> %esi 
+0x00007f86b040ec00	lea    (%rsi,%rsi,2) -> %rcx 
+0x00007f86b040ec00	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040ec00	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040ec00	sub    $0x0000000000000020 %rsp -> %rsp 
+0x00007f86b040ec00	mov    0x68(%rdi) -> %rdx 
+0x00007f86b040ec00	mov    0x70(%rax) -> %rsi 
+0x00007f86b040ec00	mov    0x08(%rdx) -> %rdi 
+0x00007f86b040ec00	mov    0x000000f8(%rax) -> %rdx 
+0x00007f86b040ec00	mov    0x08(%rsi) -> %rsi 
+0x00007f86b040ec00	mov    0x08(%rdx) -> %rdx 
+0x00007f86b040ec00	lea    (%rdx,%rcx,8) -> %r8 
+0x00007f86b040ec00	mov    0x08(%r8) -> %rcx 
+0x00007f86b040ec00	mov    %rcx -> %rdx 
+0x00007f86b040ec00	shr    $0x0000000000000020 %rdx -> %rdx 
+0x00007f86b040ec00	lea    (%rdx,%rdx,2) -> %r9 
+0x00007f86b040ec00	lea    (%rsi,%r9,8) -> %rsi 
+0x00007f86b040ec00	mov    (%rax) -> %r9 
+0x00007f86b040ec00	mov    %rsi -> 0x18(%rsp) 
+0x00007f86b040ec00	mov    %r9 -> %rbx 
+0x00007f86b040ec00	add    (%r8) %rbx -> %rbx 
+0x00007f86b040ec00	cmp    %ecx $0x00000007 
+0x00007f86b040ec00	jnz    $0x00007f86b040ed8c 
+0x00007f86b040ec5a	test   0x05(%rsi) $0x03 
+0x00007f86b040ec5a	jnz    $0x00007f86b040edab 
+0x00007f86b040ec64	mov    0x000001c8(%rax) -> %rcx 
+0x00007f86b040ec64	test   %rcx %rcx 
+0x00007f86b040ec64	jz     $0x00007f86b040ed70 
+0x00007f86b040ec74	mov    0x08(%rcx) -> %rcx 
+0x00007f86b040ec74	movzx  (%rcx,%rdx,2) -> %edx 
+0x00007f86b040ec74	and    $0x00007fff %edx -> %edx 
+0x00007f86b040ec74	lea    (%rdx,%rdx,2) -> %rcx 
+0x00007f86b040ec74	mov    0x000002e0(%rax) -> %rdx 
+0x00007f86b040ec74	lea    (%rdx,%rcx,8) -> %r8 
+0x00007f86b040ec74	mov    $0x00000000 -> %edx 
+0x00007f86b040ec74	mov    0x08(%r8) -> %ecx 
+0x00007f86b040ec74	test   %ecx %ecx 
+0x00007f86b040ec74	cmovz  %rdx %r8 -> %r8 
+0x00007f86b040ec74	mov    %fs:0x18 -> %edx 
+0x00007f86b040ec74	test   %edx %edx 
+0x00007f86b040ec74	jnz    $0x00007f86b040ede3 
+0x00007f86b040ecb0	mov    $0x00000001 -> %r9d 
+0x00007f86b040ecb0	mov    %fs:0x4c -> %r12d 
+0x00007f86b040ecb0	mov    $0x00000001 -> %fs:0x4c 
+0x00007f86b040ecb0	mov    (%rsi) -> %esi 
+0x00007f86b040ecb0	mov    0x00000380(%rax) -> %rcx 
+0x00007f86b040ecb0	lea    0x18(%rsp) -> %rdx 
+0x00007f86b040ecb0	mov    %r9d -> (%rsp) 
+0x00007f86b040ecb0	mov    $0x00000000 -> 0x08(%rsp) 
+0x00007f86b040ecb0	mov    $0x00000001 -> %r9d 
+0x00007f86b040ecb0	add    %rsi %rdi -> %rdi 
+0x00007f86b040ecb0	mov    %rax -> %rsi 
+0x00007f86b040ecb0	call   $0x00007f86b040a530 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040a530	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040a530	mov    %rsp -> %rbp 
+0x00007f86b040a530	push   %r15 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040a530	mov    %r9d -> %r15d 
+0x00007f86b040a530	push   %r14 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040a530	mov    %rsi -> %r14 
+0x00007f86b040a530	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040a530	mov    %rdx -> %r13 
+0x00007f86b040a530	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040a530	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040a530	mov    %r8 -> %rbx 
+0x00007f86b040a530	sub    $0x00000000000000f8 %rsp -> %rsp 
+0x00007f86b040a530	movzx  (%rdi) -> %eax 
+0x00007f86b040a530	mov    %rdi -> 0xffffff58(%rbp) 
+0x00007f86b040a530	mov    %rcx -> 0xffffff38(%rbp) 
+0x00007f86b040a530	test   %al %al 
+0x00007f86b040a530	jz     $0x00007f86b040a7f0 
+0x00007f86b040a569	mov    %rdi -> %rdx 
+0x00007f86b040a569	mov    $0x00001505 -> %r12d 
+0x00007f86b040a569	data16 nop    0x00(%rax,%rax,1) 
+0x00007f86b040a569	mov    %r12 -> %rcx 
+0x00007f86b040a569	add    $0x0000000000000001 %rdx -> %rdx 
+0x00007f86b040a569	shl    $0x0000000000000005 %rcx -> %rcx 
+0x00007f86b040a569	add    %rcx %r12 -> %r12 
+0x00007f86b040a569	add    %rax %r12 -> %r12 
+0x00007f86b040a569	movzx  (%rdx) -> %eax 
+0x00007f86b040a569	test   %al %al 
+0x00007f86b040a569	jnz    $0x00007f86b040a578 
+0x00007f86b040a578	mov    %r12 -> %rcx 
+0x00007f86b040a578	add    $0x0000000000000001 %rdx -> %rdx 
+0x00007f86b040a578	shl    $0x0000000000000005 %rcx -> %rcx 
+0x00007f86b040a578	add    %rcx %r12 -> %r12 
+0x00007f86b040a578	add    %rax %r12 -> %r12 
+0x00007f86b040a578	movzx  (%rdx) -> %eax 
+0x00007f86b040a578	test   %al %al 
+0x00007f86b040a578	jnz    $0x00007f86b040a578 
+0x00007f86b040a590	mov    %r12d -> %eax 
+0x00007f86b040a590	mov    %rax -> 0xffffff50(%rbp) 
+0x00007f86b040a590	mov    $0xffffffff -> %eax 
+0x00007f86b040a590	add    $0x0000000000000001 <rel> 0x00007f86b0621978 -> <rel> 0x00007f86b0621978 
+0x00007f86b040a590	test   %rbx %rbx 
+0x00007f86b040a590	mov    %rax -> 0xffffff60(%rbp) 
+0x00007f86b040a590	mov    $0x00000000 -> 0xffffff70(%rbp) 
+0x00007f86b040a590	mov    $0x00000000 -> 0xffffff78(%rbp) 
+0x00007f86b040a590	jz     $0x00007f86b040a5d6 
+0x00007f86b040a5c9	test   0x10(%rbp) $0xfffffffa 
+0x00007f86b040a5c9	jnz    $0x00007f86b040ae5a 
+0x00007f86b040a5d6	cmp    0x18(%rbp) $0x0000000000000000 
+0x00007f86b040a5d6	mov    0xffffff38(%rbp) -> %rax 
+0x00007f86b040a5d6	mov    (%rax) -> %r9 
+0x00007f86b040a5d6	jnz    $0x00007f86b040a970 
+0x00007f86b040a5eb	test   %r9 %r9 
+0x00007f86b040a5eb	mov    $0x00000000 -> 0xffffff30(%rbp) 
+0x00007f86b040a5eb	jz     $0x00007f86b040adae 
+0x00007f86b040a5ff	lea    0xffffff70(%rbp) -> %rdx 
+0x00007f86b040a5ff	lea    0xffffff60(%rbp) -> %rsi 
+0x00007f86b040a5ff	mov    0xffffff30(%rbp) -> %rax 
+0x00007f86b040a5ff	mov    0xffffff38(%rbp) -> %r12 
+0x00007f86b040a5ff	mov    %rdx -> 0xffffff40(%rbp) 
+0x00007f86b040a5ff	mov    %rsi -> 0xffffff48(%rbp) 
+0x00007f86b040a5ff	jmp    $0x00007f86b040a645 
+0x00007f86b040a645	mov    0x18(%rbp) -> %rdi 
+0x00007f86b040a645	mov    0x10(%rbp) -> %esi 
+0x00007f86b040a645	mov    0xffffff40(%rbp) -> %r8 
+0x00007f86b040a645	mov    0x00(%r13) -> %rcx 
+0x00007f86b040a645	mov    0xffffff48(%rbp) -> %rdx 
+0x00007f86b040a645	mov    %r14 -> 0x28(%rsp) 
+0x00007f86b040a645	mov    %rdi -> 0x18(%rsp) 
+0x00007f86b040a645	mov    %esi -> 0x10(%rsp) 
+0x00007f86b040a645	mov    0xffffff58(%rbp) -> %rdi 
+0x00007f86b040a645	mov    0xffffff50(%rbp) -> %rsi 
+0x00007f86b040a645	mov    %r15d -> 0x20(%rsp) 
+0x00007f86b040a645	mov    %rbx -> 0x08(%rsp) 
+0x00007f86b040a645	mov    %rax -> (%rsp) 
+0x00007f86b040a645	call   $0x00007f86b0409bc0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409bc0	push   %r15 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409bc0	mov    %rdx -> %r11 
+0x00007f86b0409bc0	push   %r14 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409bc0	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409bc0	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409bc0	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409bc0	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409bc0	mov    %rsi -> %rbx 
+0x00007f86b0409bc0	sub    $0x0000000000000088 %rsp -> %rsp 
+0x00007f86b0409bc0	mov    0x08(%r9) -> %r12d 
+0x00007f86b0409bc0	mov    0x000000c8(%rsp) -> %rax 
+0x00007f86b0409bc0	mov    %r8 -> 0x20(%rsp) 
+0x00007f86b0409bc0	mov    0x000000c0(%rsp) -> %rbp 
+0x00007f86b0409bc0	mov    0x000000d8(%rsp) -> %r14 
+0x00007f86b0409bc0	mov    %rdi -> 0x58(%rsp) 
+0x00007f86b0409bc0	mov    %rcx -> 0x68(%rsp) 
+0x00007f86b0409bc0	mov    %rax -> 0x48(%rsp) 
+0x00007f86b0409bc0	mov    0x000000d0(%rsp) -> %eax 
+0x00007f86b0409bc0	mov    %eax -> 0x74(%rsp) 
+0x00007f86b0409bc0	mov    0x000000e0(%rsp) -> %eax 
+0x00007f86b0409bc0	mov    %eax -> 0x7c(%rsp) 
+0x00007f86b0409bc0	mov    (%r9) -> %r13 
+0x00007f86b0409bc0	mov    %rsi -> %r8 
+0x00007f86b0409bc0	mov    %esi -> %r15d 
+0x00007f86b0409bc0	lea    0x40(%rsp) -> %r9 
+0x00007f86b0409bc0	shr    $0x0000000000000006 %r8 -> %r8 
+0x00007f86b0409bc0	and    $0x0000003f %r15d -> %r15d 
+0x00007f86b0409bc0	nop    0x00(%rax,%rax,1) 
+0x00007f86b0409bc0	mov    0x00(%r13,%rbp,8) -> %rax 
+0x00007f86b0409bc0	mov    $0x00000000 -> 0x70(%rsp) 
+0x00007f86b0409bc0	mov    $0x00000000 -> 0x40(%rsp) 
+0x00007f86b0409bc0	mov    0x28(%rax) -> %rdi 
+0x00007f86b0409bc0	cmp    %rdi %r14 
+0x00007f86b0409bc0	mov    %rdi -> 0x50(%rsp) 
+0x00007f86b0409bc0	jz     $0x00007f86b0409d50 
+0x00007f86b0409c60	test   0x7c(%rsp) $0x02 
+0x00007f86b0409c60	jz     $0x00007f86b0409c74 
+0x00007f86b0409c74	test   0x00000315(%rdi) $0x20 
+0x00007f86b0409c74	jnz    $0x00007f86b0409d50 
+0x00007f86b0409c81	test   <rel> 0x00007f86b0620c60 $0x08 
+0x00007f86b0409c81	jnz    $0x00007f86b040a224 
+0x00007f86b0409c8e	mov    0x000002ec(%rdi) -> %edx 
+0x00007f86b0409c8e	test   %edx %edx 
+0x00007f86b0409c8e	jz     $0x00007f86b0409d50 
+0x00007f86b0409c9c	mov    0x70(%rdi) -> %rax 
+0x00007f86b0409c9c	mov    0x08(%rax) -> %rsi 
+0x00007f86b0409c9c	mov    0x68(%rdi) -> %rax 
+0x00007f86b0409c9c	mov    0x08(%rax) -> %rax 
+0x00007f86b0409c9c	mov    %rax -> 0x60(%rsp) 
+0x00007f86b0409c9c	mov    0x000002f8(%rdi) -> %rax 
+0x00007f86b0409c9c	test   %rax %rax 
+0x00007f86b0409c9c	jz     $0x00007f86b040a2db 
+0x00007f86b0409cc1	mov    %r8d -> %ecx 
+0x00007f86b0409cc1	and    0x000002f0(%rdi) %ecx -> %ecx 
+0x00007f86b0409cc1	mov    (%rax,%rcx,8) -> %r10 
+0x00007f86b0409cc1	mov    0x000002f4(%rdi) -> %ecx 
+0x00007f86b0409cc1	mov    %rbx -> %rax 
+0x00007f86b0409cc1	shr    %cl %rax -> %rax 
+0x00007f86b0409cc1	mov    %rax -> %rcx 
+0x00007f86b0409cc1	mov    %r10 -> %rax 
+0x00007f86b0409cc1	shr    %cl %rax -> %rax 
+0x00007f86b0409cc1	mov    %r15d -> %ecx 
+0x00007f86b0409cc1	shr    %cl %r10 -> %r10 
+0x00007f86b0409cc1	and    %r10 %rax -> %rax 
+0x00007f86b0409cc1	test   %al $0x01 
+0x00007f86b0409cc1	jnz    $0x00007f86b040a452 
+0x00007f86b0409cf4	mov    $0x00000000 -> 0x78(%rsp) 
+0x00007f86b0409cf4	cmp    0x70(%rsp) $0x00000001 
+0x00007f86b0409cf4	jz     $0x00007f86b0409d68 
+0x00007f86b0409d03	mov    0x78(%rsp) -> %edx 
+0x00007f86b0409d03	test   %edx %edx 
+0x00007f86b0409d03	jnz    $0x00007f86b0409d50 
+0x00007f86b0409d0b	mov    0x48(%rsp) -> %rax 
+0x00007f86b0409d0b	test   %rax %rax 
+0x00007f86b0409d0b	jz     $0x00007f86b0409d50 
+0x00007f86b0409d15	mov    0x10(%rax) -> %rdi 
+0x00007f86b0409d15	test   %rdi %rdi 
+0x00007f86b0409d15	jz     $0x00007f86b0409d50 
+0x00007f86b0409d1e	mov    0x50(%rsp) -> %rsi 
+0x00007f86b0409d1e	mov    %r9 -> 0x18(%rsp) 
+0x00007f86b0409d1e	mov    %r11 -> 0x10(%rsp) 
+0x00007f86b0409d1e	mov    %r8 -> 0x08(%rsp) 
+0x00007f86b0409d1e	call   $0x00007f86b0410910 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0410910	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0410910	mov    %rdi -> %rbp 
+0x00007f86b0410910	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0410910	mov    %rsi -> %rbx 
+0x00007f86b0410910	sub    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86b0410910	mov    0x08(%rsi) -> %rsi 
+0x00007f86b0410910	call   $0x00007f86b0418650 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0418650	mov    (%rdi) -> %al 
+0x00007f86b0418650	cmp    %al (%rsi) 
+0x00007f86b0418650	jnz    $0x00007f86b0418663 
+0x00007f86b0418663	mov    $0x00000001 -> %eax 
+0x00007f86b0418663	mov    $0xffffffff -> %ecx 
+0x00007f86b0418663	cmovb  %ecx %eax -> %eax 
+0x00007f86b0418663	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b0410925	test   %eax %eax 
+0x00007f86b0410925	mov    $0x00000001 -> %edx 
+0x00007f86b0410925	jz     $0x00007f86b041095d 
+0x00007f86b041092e	mov    0x38(%rbx) -> %rbx 
+0x00007f86b041092e	test   %rbx %rbx 
+0x00007f86b041092e	jnz    $0x00007f86b0410949 
+0x00007f86b0410949	mov    (%rbx) -> %rsi 
+0x00007f86b0410949	mov    %rbp -> %rdi 
+0x00007f86b0410949	call   $0x00007f86b0418650 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0410954	test   %eax %eax 
+0x00007f86b0410954	jnz    $0x00007f86b0410940 
+0x00007f86b0410940	mov    0x08(%rbx) -> %rbx 
+0x00007f86b0410940	test   %rbx %rbx 
+0x00007f86b0410940	jz     $0x00007f86b0410970 
+0x00007f86b0410970	add    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86b0410970	xor    %edx %edx -> %edx 
+0x00007f86b0410970	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86b0410970	mov    %edx -> %eax 
+0x00007f86b0410970	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86b0410970	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b0409d37	test   %eax %eax 
+0x00007f86b0409d37	mov    0x08(%rsp) -> %r8 
+0x00007f86b0409d37	mov    0x10(%rsp) -> %r11 
+0x00007f86b0409d37	mov    0x18(%rsp) -> %r9 
+0x00007f86b0409d37	jnz    $0x00007f86b040a448 
+0x00007f86b0409d4e	data16 nop    
+0x00007f86b0409d4e	add    $0x0000000000000001 %rbp -> %rbp 
+0x00007f86b0409d4e	cmp    %r12 %rbp 
+0x00007f86b0409d4e	jnbe   $0x00007f86b0409c38 
+0x00007f86b0409c38	mov    0x00(%r13,%rbp,8) -> %rax 
+0x00007f86b0409c38	mov    $0x00000000 -> 0x70(%rsp) 
+0x00007f86b0409c38	mov    $0x00000000 -> 0x40(%rsp) 
+0x00007f86b0409c38	mov    0x28(%rax) -> %rdi 
+0x00007f86b0409c38	cmp    %rdi %r14 
+0x00007f86b0409c38	mov    %rdi -> 0x50(%rsp) 
+0x00007f86b0409c38	jz     $0x00007f86b0409d50 
+0x00007f86b0418656	inc    %rdi -> %rdi 
+0x00007f86b0418656	inc    %rsi -> %rsi 
+0x00007f86b0418656	test   %al %al 
+0x00007f86b0418656	jnz    $0x00007f86b0418650 
+0x00007f86b040a452	mov    %edx -> %ecx 
+0x00007f86b040a452	mov    %rbx -> %rax 
+0x00007f86b040a452	xor    %edx %edx -> %edx 
+0x00007f86b040a452	div    %rcx %rdx %rax -> %rdx %rax 
+0x00007f86b040a452	mov    0x00000300(%rdi) -> %rax 
+0x00007f86b040a452	mov    (%rax,%rdx,4) -> %eax 
+0x00007f86b040a452	test   %eax %eax 
+0x00007f86b040a452	jz     $0x00007f86b0409cf4 
+0x00007f86b040a46e	mov    0x00000308(%rdi) -> %rdx 
+0x00007f86b040a46e	lea    (%rdx,%rax,4) -> %rdx 
+0x00007f86b040a46e	jmp    $0x00007f86b040a48d 
+0x00007f86b040a48d	mov    (%rdx) -> %ecx 
+0x00007f86b040a48d	mov    %ecx -> %eax 
+0x00007f86b040a48d	xor    %rbx %rax -> %rax 
+0x00007f86b040a48d	shr    $0x0000000000000001 %rax -> %rax 
+0x00007f86b040a48d	jnz    $0x00007f86b040a480 
+0x00007f86b040a499	mov    0x50(%rsp) -> %rax 
+0x00007f86b040a499	mov    %rdx -> %rdi 
+0x00007f86b040a499	mov    %r9 -> %r10 
+0x00007f86b040a499	mov    %r11 -> 0x30(%rsp) 
+0x00007f86b040a499	mov    %r8 -> 0x28(%rsp) 
+0x00007f86b040a499	mov    %r9 -> 0x08(%rsp) 
+0x00007f86b040a499	mov    %rdx -> 0x18(%rsp) 
+0x00007f86b040a499	sub    0x00000308(%rax) %rdi -> %rdi 
+0x00007f86b040a499	mov    %rsi -> 0x10(%rsp) 
+0x00007f86b040a499	mov    %rdi -> %rax 
+0x00007f86b040a499	sar    $0x0000000000000002 %rax -> %rax 
+0x00007f86b040a499	mov    %eax -> 0x78(%rsp) 
+0x00007f86b040a499	mov    %eax -> %eax 
+0x00007f86b040a499	lea    (%rax,%rax,2) -> %rax 
+0x00007f86b040a499	lea    (%rsi,%rax,8) -> %rdi 
+0x00007f86b040a499	call   $0x00007f86b0409a40 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409a40	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409a40	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409a40	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409a40	mov    %rdi -> %rbp 
+0x00007f86b0409a40	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409a40	mov    %r10 -> %rbx 
+0x00007f86b0409a40	sub    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86b0409a40	movzx  0x04(%rdi) -> %eax 
+0x00007f86b0409a40	and    $0x0000000f %eax -> %eax 
+0x00007f86b0409a40	cmp    0x08(%rdi) $0x0000000000000000 
+0x00007f86b0409a40	jz     $0x00007f86b0409b75 
+0x00007f86b0409a62	xor    %edx %edx -> %edx 
+0x00007f86b0409a62	data16 cmp    0x06(%rbp) $0x0000 
+0x00007f86b0409a62	setz   -> %dl 
+0x00007f86b0409a62	test   0x3c(%rbx) %edx 
+0x00007f86b0409a62	jnz    $0x00007f86b0409b50 
+0x00007f86b0409a75	mov    $0x00000467 -> %edx 
+0x00007f86b0409a75	bt     %edx %eax 
+0x00007f86b0409a75	jnb    $0x00007f86b0409b50 
+0x00007f86b0409a83	cmp    %rbp 0x28(%rbx) 
+0x00007f86b0409a83	jz     $0x00007f86b0409aa1 
+0x00007f86b0409a89	mov    0x00(%rbp) -> %edi 
+0x00007f86b0409a89	mov    0x18(%rbx) -> %rsi 
+0x00007f86b0409a89	add    0x20(%rbx) %rdi -> %rdi 
+0x00007f86b0409a89	call   $0x00007f86b0418650 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0418660	xor    %eax %eax -> %eax 
+0x00007f86b0418660	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b0409a99	test   %eax %eax 
+0x00007f86b0409a99	jnz    $0x00007f86b0409b50 
+0x00007f86b0409aa1	mov    0x08(%rbx) -> %r12 
+0x00007f86b0409aa1	mov    0x10(%rbx) -> %rsi 
+0x00007f86b0409aa1	test   %r12 %r12 
+0x00007f86b0409aa1	mov    0x00000330(%rsi) -> %rax 
+0x00007f86b0409aa1	jz     $0x00007f86b0409b10 
+0x00007f86b0409ab5	test   %rax %rax 
+0x00007f86b0409ab5	jz     $0x00007f86b0409b82 
+0x00007f86b0409abe	mov    0x38(%rbx) -> %edx 
+0x00007f86b0409abe	movzx  (%rax,%rdx,2) -> %r13d 
+0x00007f86b0409abe	mov    %r13 -> %rax 
+0x00007f86b0409abe	and    $0x00007fff %eax -> %eax 
+0x00007f86b0409abe	lea    (%rax,%rax,2) -> %rdx 
+0x00007f86b0409abe	mov    0x000002e0(%rsi) -> %rax 
+0x00007f86b0409abe	lea    (%rax,%rdx,8) -> %rax 
+0x00007f86b0409abe	mov    0x08(%rax) -> %ebx 
+0x00007f86b0409abe	cmp    %ebx 0x08(%r12) 
+0x00007f86b0409abe	jz     $0x00007f86b0409b60 
+0x00007f86b0409b60	mov    (%r12) -> %rsi 
+0x00007f86b0409b60	mov    (%rax) -> %rdi 
+0x00007f86b0409b60	call   $0x00007f86b0418650 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0409b6c	test   %eax %eax 
+0x00007f86b0409b6c	jz     $0x00007f86b0409afa 
+0x00007f86b0409afa	add    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86b0409afa	mov    %rbp -> %rax 
+0x00007f86b0409afa	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86b0409afa	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86b0409afa	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86b0409afa	pop    %rsp (%rsp) -> %r13 %rsp 
+0x00007f86b0409afa	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040a4de	test   %rax %rax 
+0x00007f86b040a4de	mov    0x08(%rsp) -> %r9 
+0x00007f86b040a4de	mov    0x28(%rsp) -> %r8 
+0x00007f86b040a4de	mov    0x30(%rsp) -> %r11 
+0x00007f86b040a4de	jnz    $0x00007f86b0409d72 
+0x00007f86b0409d72	movzx  0x04(%rax) -> %edx 
+0x00007f86b0409d72	shr    $0x04 %dl -> %dl 
+0x00007f86b0409d72	cmp    %dl $0x02 
+0x00007f86b0409d72	jz     $0x00007f86b0409ee8 
+0x00007f86b0409d82	cmp    %dl $0x0a 
+0x00007f86b0409d82	jz     $0x00007f86b0409dc8 
+0x00007f86b0409d87	cmp    %dl $0x01 
+0x00007f86b0409d87	jnz    $0x00007f86b0409d03 
+0x00007f86b0409d90	mov    %rax -> 0x18(%rsp) 
+0x00007f86b0409d90	mov    0x20(%rsp) -> %rbx 
+0x00007f86b0409d90	mov    0x50(%rsp) -> %rax 
+0x00007f86b0409d90	mov    0x18(%rsp) -> %rsi 
+0x00007f86b0409d90	mov    %rax -> 0x08(%rbx) 
+0x00007f86b0409d90	mov    $0x00000001 -> %eax 
+0x00007f86b0409d90	mov    %rsi -> (%rbx) 
+0x00007f86b0409d90	add    $0x0000000000000088 %rsp -> %rsp 
+0x00007f86b0409d90	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86b0409d90	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86b0409d90	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86b0409d90	pop    %rsp (%rsp) -> %r13 %rsp 
+0x00007f86b0409d90	pop    %rsp (%rsp) -> %r14 %rsp 
+0x00007f86b0409d90	pop    %rsp (%rsp) -> %r15 %rsp 
+0x00007f86b0409d90	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040a68d	cmp    %eax $0x00000000 
+0x00007f86b040a68d	jle    $0x00007f86b040a630 
+0x00007f86b040a692	cmp    0xffffff70(%rbp) $0x0000000000000000 
+0x00007f86b040a692	jz     $0x00007f86b040adae 
+0x00007f86b040a6a0	mov    0x00(%r13) -> %rcx 
+0x00007f86b040a6a0	test   %rcx %rcx 
+0x00007f86b040a6a0	jz     $0x00007f86b040a6b4 
+0x00007f86b040a6a9	movzx  0x05(%rcx) -> %eax 
+0x00007f86b040a6a9	and    $0x00000003 %eax -> %eax 
+0x00007f86b040a6a9	cmp    %al $0x03 
+0x00007f86b040a6a9	jz     $0x00007f86b040a710 
+0x00007f86b040a6b4	mov    0xffffff78(%rbp) -> %r12 
+0x00007f86b040a6b4	xor    %r9d %r9d -> %r9d 
+0x00007f86b040a6b4	movzx  0x00000314(%r12) -> %eax 
+0x00007f86b040a6b4	and    $0x00000003 %eax -> %eax 
+0x00007f86b040a6b4	cmp    %al $0x02 
+0x00007f86b040a6b4	mov    %r12 -> %rax 
+0x00007f86b040a6b4	jz     $0x00007f86b040a9ce 
+0x00007f86b040a6d5	mov    0x000003cc(%rax) -> %esi 
+0x00007f86b040a6d5	test   %esi %esi 
+0x00007f86b040a6d5	jz     $0x00007f86b040a9bf 
+0x00007f86b040a6e3	mov    <rel> 0x00007f86b0620c60 -> %edx 
+0x00007f86b040a6e3	test   %edx $0x00000804 
+0x00007f86b040a6e3	jnz    $0x00007f86b040aa4b 
+0x00007f86b040a6f5	mov    0xffffff70(%rbp) -> %rdx 
+0x00007f86b040a6f5	mov    %rdx -> 0x00(%r13) 
+0x00007f86b040a6f5	lea    0xffffffd8(%rbp) -> %rsp 
+0x00007f86b040a6f5	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86b040a6f5	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86b040a6f5	pop    %rsp (%rsp) -> %r13 %rsp 
+0x00007f86b040a6f5	pop    %rsp (%rsp) -> %r14 %rsp 
+0x00007f86b040a6f5	pop    %rsp (%rsp) -> %r15 %rsp 
+0x00007f86b040a6f5	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86b040a6f5	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040ecf7	mov    %rax -> %rbp 
+0x00007f86b040ecf7	mov    %fs:0x18 -> %eax 
+0x00007f86b040ecf7	test   %eax %eax 
+0x00007f86b040ecf7	jnz    $0x00007f86b040edb0 
+0x00007f86b040ed0a	mov    %fs:0x4c -> %eax 
+0x00007f86b040ed0a	test   %eax %eax 
+0x00007f86b040ed0a	jz     $0x00007f86b040ed60 
+0x00007f86b040ed16	mov    %r12d -> %fs:0x4c 
+0x00007f86b040ed16	mov    0x18(%rsp) -> %rsi 
+0x00007f86b040ed16	test   %rsi %rsi 
+0x00007f86b040ed16	jz     $0x00007f86b040ed80 
+0x00007f86b040ed29	test   %rbp %rbp 
+0x00007f86b040ed29	jz     $0x00007f86b040ed88 
+0x00007f86b040ed2e	mov    0x00(%rbp) -> %rax 
+0x00007f86b040ed2e	movzx  0x04(%rsi) -> %edx 
+0x00007f86b040ed2e	add    0x08(%rsi) %rax -> %rax 
+0x00007f86b040ed2e	and    $0x0000000f %edx -> %edx 
+0x00007f86b040ed2e	cmp    %dl $0x0a 
+0x00007f86b040ed2e	jz     $0x00007f86b040edfa 
+0x00007f86b040ed46	mov    <rel> 0x00007f86b0620ca8 -> %edx 
+0x00007f86b040ed46	test   %edx %edx 
+0x00007f86b040ed46	jnz    $0x00007f86b040ed53 
+0x00007f86b040ed50	mov    %rax -> (%rbx) 
+0x00007f86b040ed50	add    $0x0000000000000020 %rsp -> %rsp 
+0x00007f86b040ed50	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86b040ed50	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86b040ed50	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86b040ed50	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b0415225	mov    %rax -> %r11 
+0x00007f86b0415225	mov    0x30(%rsp) -> %r9 
+0x00007f86b0415225	mov    0x28(%rsp) -> %r8 
+0x00007f86b0415225	mov    0x20(%rsp) -> %rdi 
+0x00007f86b0415225	mov    0x18(%rsp) -> %rsi 
+0x00007f86b0415225	mov    0x10(%rsp) -> %rdx 
+0x00007f86b0415225	mov    0x08(%rsp) -> %rcx 
+0x00007f86b0415225	mov    (%rsp) -> %rax 
+0x00007f86b0415225	add    $0x0000000000000048 %rsp -> %rsp 
+0x00007f86b0415225	jmp    %r11 
+0x00007f86afe6dad0	push   %r14 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe6dad0	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe6dad0	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe6dad0	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe6dad0	mov    %rcx -> %rbp 
+0x00007f86afe6dad0	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe6dad0	sub    $0x0000000000000090 %rsp -> %rsp 
+0x00007f86afe6dad0	mov    <rel> 0x00007f86b01f0f18 -> %rax 
+0x00007f86afe6dad0	mov    %rdi -> 0x18(%rsp) 
+0x00007f86afe6dad0	mov    %esi -> 0x14(%rsp) 
+0x00007f86afe6dad0	mov    %rdx -> 0x08(%rsp) 
+0x00007f86afe6dad0	test   %rax %rax 
+0x00007f86afe6dad0	jz     $0x00007f86afe6dbcc 
+0x00007f86afe6dbcc	xor    %edx %edx -> %edx 
+0x00007f86afe6dbcc	jmp    $0x00007f86afe6db09 
+0x00007f86afe6db09	mov    <rel> 0x00007f86b01f0e18 -> %rax 
+0x00007f86afe6db09	test   %r9 %r9 
+0x00007f86afe6db09	mov    %edx -> (%rax) 
+0x00007f86afe6db09	jz     $0x00007f86afe6db23 
+0x00007f86afe6db17	xor    %edx %edx -> %edx 
+0x00007f86afe6db17	xor    %esi %esi -> %esi 
+0x00007f86afe6db17	mov    %r9 -> %rdi 
+0x00007f86afe6db17	call   $0x00007f86afe84110 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe84110	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe84110	mov    %rsi -> %r12 
+0x00007f86afe84110	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe84110	mov    %rdx -> %rbp 
+0x00007f86afe84110	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe84110	mov    %rdi -> %rbx 
+0x00007f86afe84110	lea    <rel> 0x00007f86b01f15a8 -> %rdi 
+0x00007f86afe84110	call   $0x00007f86afe83f50 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe83f50	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe83f50	mov    $0x00000001 -> %esi 
+0x00007f86afe83f50	xor    %eax %eax -> %eax 
+0x00007f86afe83f50	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe83f50	mov    %rdi -> %rbx 
+0x00007f86afe83f50	sub    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86afe83f50	cmp    <rel> 0x00007f86b01f67d4 $0x00000000 
+0x00007f86afe83f50	jz     $0x00007f86afe83f79 
+0x00007f86afe83f79	cmpxchg %esi <rel> 0x00007f86b01f3090 %eax -> <rel> 0x00007f86b01f3090 %eax 
+0x00007f86afe83f79	jnz    $0x00007f86afe8415f 
+0x00007f86afe83f86	mov    (%rbx) -> %rbp 
+0x00007f86afe83f86	test   %rbp %rbp 
+0x00007f86afe83f86	jz     $0x00007f86afe8408e 
+0x00007f86afe83f92	mov    %rbp -> %r8 
+0x00007f86afe83f92	xor    %eax %eax -> %eax 
+0x00007f86afe83f92	data16 nop    0x00000000(%rax,%rax,1) 
+0x00007f86afe83f92	mov    0x08(%r8) -> %rcx 
+0x00007f86afe83f92	test   %rcx %rcx 
+0x00007f86afe83f92	jz     $0x00007f86afe83fe7 
+0x00007f86afe83fe7	mov    (%r8) -> %rdx 
+0x00007f86afe83fe7	mov    $0x00000000 -> 0x08(%r8) 
+0x00007f86afe83fe7	mov    %r8 -> %rax 
+0x00007f86afe83fe7	test   %rdx %rdx 
+0x00007f86afe83fe7	jz     $0x00007f86afe84064 
+0x00007f86afe84064	lea    0x10(%rax) -> %rsi 
+0x00007f86afe84064	mov    $0x00000001 -> 0x08(%rax) 
+0x00007f86afe84064	jmp    $0x00007f86afe84022 
+0x00007f86afe84022	mov    $0x00000001 -> (%rsi) 
+0x00007f86afe84022	add    $0x0000000000000001 <rel> 0x00007f86b01f6500 -> <rel> 0x00007f86b01f6500 
+0x00007f86afe84022	cmp    <rel> 0x00007f86b01f67d4 $0x00000000 
+0x00007f86afe84022	jz     $0x00007f86afe84049 
+0x00007f86afe84049	dec    <rel> 0x00007f86b01f3090 -> <rel> 0x00007f86b01f3090 
+0x00007f86afe84049	jnz    $0x00007f86afe8417e 
+0x00007f86afe84055	add    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86afe84055	mov    %rsi -> %rax 
+0x00007f86afe84055	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86afe84055	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86afe84055	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afe84129	test   %rax %rax 
+0x00007f86afe84129	jz     $0x00007f86afe84158 
+0x00007f86afe8412e	mov    %rbx -> %rdi 
+0x00007f86afe8412e	mov    %r12 -> 0x10(%rax) 
+0x00007f86afe8412e	mov    %rbp -> 0x18(%rax) 
+0x00007f86afe8412e	xor    %fs:0x30 %rdi -> %rdi 
+0x00007f86afe8412e	rol    $0x0000000000000011 %rdi -> %rdi 
+0x00007f86afe8412e	mov    %rdi -> 0x08(%rax) 
+0x00007f86afe8412e	mov    $0x00000004 -> (%rax) 
+0x00007f86afe8412e	xor    %eax %eax -> %eax 
+0x00007f86afe8412e	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86afe8412e	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86afe8412e	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86afe8412e	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afe6db23	mov    <rel> 0x00007f86b01f0e28 -> %rdx 
+0x00007f86afe6db23	mov    (%rdx) -> %eax 
+0x00007f86afe6db23	and    $0x00000002 %eax -> %eax 
+0x00007f86afe6db23	movsxd %eax -> %rbx 
+0x00007f86afe6db23	test   %rbx %rbx 
+0x00007f86afe6db23	jnz    $0x00007f86afe6dc73 
+0x00007f86afe6db3b	test   %rbp %rbp 
+0x00007f86afe6db3b	jz     $0x00007f86afe6db55 
+0x00007f86afe6db40	mov    <rel> 0x00007f86b01f0e78 -> %rax 
+0x00007f86afe6db40	mov    0x08(%rsp) -> %rsi 
+0x00007f86afe6db40	mov    0x14(%rsp) -> %edi 
+0x00007f86afe6db40	mov    (%rax) -> %rdx 
+0x00007f86afe6db40	call   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004c0	push   %r15 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004c0	mov    %edi -> %r15d 
+0x00000000004004c0	push   %r14 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004c0	mov    %rsi -> %r14 
+0x00000000004004c0	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004c0	mov    %rdx -> %r13 
+0x00000000004004c0	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004c0	lea    <rel> 0x0000000000600648 -> %r12 
+0x00000000004004c0	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004c0	lea    <rel> 0x0000000000600650 -> %rbp 
+0x00000000004004c0	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004c0	sub    %r12 %rbp -> %rbp 
+0x00000000004004c0	xor    %ebx %ebx -> %ebx 
+0x00000000004004c0	sar    $0x0000000000000003 %rbp -> %rbp 
+0x00000000004004c0	sub    $0x0000000000000008 %rsp -> %rsp 
+0x00000000004004c0	call   $0x0000000000400370 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000000400370	sub    $0x0000000000000008 %rsp -> %rsp 
+0x0000000000400370	mov    <rel> 0x0000000000600830 -> %rax 
+0x0000000000400370	test   %rax %rax 
+0x0000000000400370	jz     $0x0000000000400385 
+0x0000000000400385	add    $0x0000000000000008 %rsp -> %rsp 
+0x0000000000400385	ret    %rsp (%rsp) -> %rsp 
+0x00000000004004f3	test   %rbp %rbp 
+0x00000000004004f3	jz     $0x0000000000400516 
+0x00000000004004f8	nop    0x00000000(%rax,%rax,1) 
+0x00000000004004f8	mov    %r13 -> %rdx 
+0x00000000004004f8	mov    %r14 -> %rsi 
+0x00000000004004f8	mov    %r15d -> %edi 
+0x00000000004004f8	call   (%r12,%rbx,8) %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000000400480	cmp    <rel> 0x0000000000600658 $0x0000000000000000 
+0x0000000000400480	jz     $0x00000000004004a8 
+0x00000000004004a8	jmp    $0x0000000000400420 
+0x0000000000400420	mov    $0x00600870 -> %eax 
+0x0000000000400420	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000000400420	sub    $0x0000000000600870 %rax -> %rax 
+0x0000000000400420	sar    $0x0000000000000003 %rax -> %rax 
+0x0000000000400420	mov    %rsp -> %rbp 
+0x0000000000400420	mov    %rax -> %rdx 
+0x0000000000400420	shr    $0x000000000000003f %rdx -> %rdx 
+0x0000000000400420	add    %rdx %rax -> %rax 
+0x0000000000400420	sar    $0x0000000000000001 %rax -> %rax 
+0x0000000000400420	jnz    $0x0000000000400444 
+0x0000000000400442	pop    %rsp (%rsp) -> %rbp %rsp 
+0x0000000000400442	ret    %rsp (%rsp) -> %rsp 
+0x000000000040050d	add    $0x0000000000000001 %rbx -> %rbx 
+0x000000000040050d	cmp    %rbx %rbp 
+0x000000000040050d	jnz    $0x0000000000400500 
+0x0000000000400516	add    $0x0000000000000008 %rsp -> %rsp 
+0x0000000000400516	pop    %rsp (%rsp) -> %rbx %rsp 
+0x0000000000400516	pop    %rsp (%rsp) -> %rbp %rsp 
+0x0000000000400516	pop    %rsp (%rsp) -> %r12 %rsp 
+0x0000000000400516	pop    %rsp (%rsp) -> %r13 %rsp 
+0x0000000000400516	pop    %rsp (%rsp) -> %r14 %rsp 
+0x0000000000400516	pop    %rsp (%rsp) -> %r15 %rsp 
+0x0000000000400516	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afe6db55	mov    <rel> 0x00007f86b01f0e28 -> %rax 
+0x00007f86afe6db55	mov    0x00000128(%rax) -> %ebp 
+0x00007f86afe6db55	test   %ebp %ebp 
+0x00007f86afe6db55	jnz    $0x00007f86afe6dc33 
+0x00007f86afe6db6a	test   %rbx %rbx 
+0x00007f86afe6db6a	jnz    $0x00007f86afe6dc10 
+0x00007f86afe6db73	lea    0x20(%rsp) -> %rdi 
+0x00007f86afe6db73	call   $0x00007f86afe81230 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe81230	xor    %esi %esi -> %esi 
+0x00007f86afe81230	jmp    $0x00007f86afe81190 
+0x00007f86afe81190	mov    %rbx -> (%rdi) 
+0x00007f86afe81190	mov    %rbp -> %rax 
+0x00007f86afe81190	xor    %fs:0x30 %rax -> %rax 
+0x00007f86afe81190	rol    $0x0000000000000011 %rax -> %rax 
+0x00007f86afe81190	mov    %rax -> 0x08(%rdi) 
+0x00007f86afe81190	mov    %r12 -> 0x10(%rdi) 
+0x00007f86afe81190	mov    %r13 -> 0x18(%rdi) 
+0x00007f86afe81190	mov    %r14 -> 0x20(%rdi) 
+0x00007f86afe81190	mov    %r15 -> 0x28(%rdi) 
+0x00007f86afe81190	lea    0x08(%rsp) -> %rdx 
+0x00007f86afe81190	xor    %fs:0x30 %rdx -> %rdx 
+0x00007f86afe81190	rol    $0x0000000000000011 %rdx -> %rdx 
+0x00007f86afe81190	mov    %rdx -> 0x30(%rdi) 
+0x00007f86afe81190	mov    (%rsp) -> %rax 
+0x00007f86afe81190	xor    %fs:0x30 %rax -> %rax 
+0x00007f86afe81190	rol    $0x0000000000000011 %rax -> %rax 
+0x00007f86afe81190	mov    %rax -> 0x38(%rdi) 
+0x00007f86afe81190	jmp    $0x00007f86afe811f0 
+0x00007f86afe811f0	xor    %eax %eax -> %eax 
+0x00007f86afe811f0	test   %esi %esi 
+0x00007f86afe811f0	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe811f0	mov    %rdi -> %rbx 
+0x00007f86afe811f0	jz     $0x00007f86afe8120f 
+0x00007f86afe8120f	mov    %eax -> 0x40(%rbx) 
+0x00007f86afe8120f	xor    %eax %eax -> %eax 
+0x00007f86afe8120f	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86afe8120f	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afe6db7d	test   %eax %eax 
+0x00007f86afe6db7d	jnz    $0x00007f86afe6dbd3 
+0x00007f86afe6db81	mov    %fs:0x00000300 -> %rax 
+0x00007f86afe6db81	mov    %rax -> 0x68(%rsp) 
+0x00007f86afe6db81	mov    %fs:0x000002f8 -> %rax 
+0x00007f86afe6db81	mov    %rax -> 0x70(%rsp) 
+0x00007f86afe6db81	lea    0x20(%rsp) -> %rax 
+0x00007f86afe6db81	mov    %rax -> %fs:0x00000300 
+0x00007f86afe6db81	mov    <rel> 0x00007f86b01f0e78 -> %rax 
+0x00007f86afe6db81	mov    0x08(%rsp) -> %rsi 
+0x00007f86afe6db81	mov    0x14(%rsp) -> %edi 
+0x00007f86afe6db81	mov    (%rax) -> %rdx 
+0x00007f86afe6db81	mov    0x18(%rsp) -> %rax 
+0x00007f86afe6db81	call   %rax %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004b0	xor    %eax %eax -> %eax 
+0x00000000004004b0	inc    %eax -> %eax 
+0x00000000004004b0	inc    %eax -> %eax 
+0x00000000004004b0	inc    %eax -> %eax 
+0x00000000004004b0	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afe6dbc5	mov    %eax -> %edi 
+0x00007f86afe6dbc5	call   $0x00007f86afe83ee0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe83ee0	lea    <rel> 0x00007f86b01f15a8 -> %rsi 
+0x00007f86afe83ee0	sub    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86afe83ee0	mov    $0x00000001 -> %edx 
+0x00007f86afe83ee0	call   $0x00007f86afe83dd0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe83dd0	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe83dd0	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe83dd0	mov    %edx -> %r12d 
+0x00007f86afe83dd0	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe83dd0	mov    %rsi -> %rbp 
+0x00007f86afe83dd0	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe83dd0	mov    %edi -> %ebx 
+0x00007f86afe83dd0	sub    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86afe83dd0	call   $0x00007f86afe84420 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe84420	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe84420	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe84420	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe84420	lea    <rel> 0x00007f86b01f0d40 -> %rdi 
+0x00007f86afe84420	call   $0x00007f86afe6b4d0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe6b4d0	jmp    <rel> 0x00007f86b01f1038 
+0x00007f86b0412a00	mov    %fs:0x08 -> %rsi 
+0x00007f86b0412a00	mov    <rel> 0x00007f86b0621f60 -> %rax 
+0x00007f86b0412a00	cmp    (%rsi) %rax 
+0x00007f86b0412a00	jnz    $0x00007f86b0412a2b 
+0x00007f86b0412a15	mov    (%rdi) -> %rax 
+0x00007f86b0412a15	shl    $0x0000000000000004 %rax -> %rax 
+0x00007f86b0412a15	mov    (%rsi,%rax,1) -> %rax 
+0x00007f86b0412a15	cmp    %rax $0xffffffffffffffff 
+0x00007f86b0412a15	jz     $0x00007f86b0412a30 
+0x00007f86b0412a26	add    0x08(%rdi) %rax -> %rax 
+0x00007f86b0412a26	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afe84430	mov    0x00000040(%rax) -> %rbx 
+0x00007f86afe84430	test   %rbx %rbx 
+0x00007f86afe84430	jz     $0x00007f86afe844d8 
+0x00007f86afe844d8	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86afe844d8	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86afe844d8	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86afe844d8	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afe83de7	mov    0x00(%rbp) -> %r13 
+0x00007f86afe83de7	test   %r13 %r13 
+0x00007f86afe83de7	jz     $0x00007f86afe83e40 
+0x00007f86afe83df0	mov    0x08(%r13) -> %rax 
+0x00007f86afe83df0	mov    %rax -> %rdx 
+0x00007f86afe83df0	shl    $0x0000000000000005 %rdx -> %rdx 
+0x00007f86afe83df0	test   %rax %rax 
+0x00007f86afe83df0	lea    0xfffffff0(%r13,%rdx,1) -> %rcx 
+0x00007f86afe83df0	jz     $0x00007f86afe83e2f 
+0x00007f86afe83e05	sub    $0x0000000000000001 %rax -> %rax 
+0x00007f86afe83e05	mov    %rax -> 0x08(%r13) 
+0x00007f86afe83e05	mov    (%rcx) -> %r8 
+0x00007f86afe83e05	cmp    %r8 $0x0000000000000003 
+0x00007f86afe83e05	jz     $0x00007f86afe83eb0 
+0x00007f86afe83e1a	cmp    %r8 $0x0000000000000004 
+0x00007f86afe83e1a	jz     $0x00007f86afe83e90 
+0x00007f86afe83e90	mov    0x08(%rcx) -> %rax 
+0x00007f86afe83e90	mov    0x10(%rcx) -> %rdi 
+0x00007f86afe83e90	mov    %ebx -> %esi 
+0x00007f86afe83e90	ror    $0x0000000000000011 %rax -> %rax 
+0x00007f86afe83e90	xor    %fs:0x30 %rax -> %rax 
+0x00007f86afe83e90	call   %rax %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fd10	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fd10	mov    %rsp -> %rbp 
+0x00007f86b040fd10	push   %r15 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fd10	push   %r14 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fd10	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fd10	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fd10	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fd10	sub    $0x0000000000000038 %rsp -> %rsp 
+0x00007f86b040fd10	mov    $0x00000000 -> 0xffffffcc(%rbp) 
+0x00007f86b040fd10	mov    $0x00000000 -> 0xffffffa8(%rbp) 
+0x00007f86b040fd10	mov    $0x00000000 -> 0xffffffb0(%rbp) 
+0x00007f86b040fd10	mov    <rel> 0x00007f86b0621900 -> %rax 
+0x00007f86b040fd10	sub    $0x0000000000000001 %rax -> %rax 
+0x00007f86b040fd10	mov    %rax -> 0xffffffb8(%rbp) 
+0x00007f86b040fd10	js     $0x00007f86b040ff54 
+0x00007f86b040fd4d	lea    (%rax,%rax,8) -> %rax 
+0x00007f86b040fd4d	lea    <rel> 0x00007f86b0621000 -> %rsi 
+0x00007f86b040fd4d	shl    $0x0000000000000004 %rax -> %rax 
+0x00007f86b040fd4d	lea    0x08(%rsi,%rax,1) -> %rax 
+0x00007f86b040fd4d	mov    %rax -> 0xffffffc0(%rbp) 
+0x00007f86b040fd4d	jmp    $0x00007f86b040fd90 
+0x00007f86b040fd90	lea    <rel> 0x00007f86b0621908 -> %rdi 
+0x00007f86b040fd90	call   <rel> 0x00007f86b0621f08 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b04022d0	add    $0x00000001 0x04(%rdi) -> 0x04(%rdi) 
+0x00007f86b04022d0	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040fd9d	mov    0xffffffc0(%rbp) -> %rax 
+0x00007f86b040fd9d	mov    (%rax) -> %esi 
+0x00007f86b040fd9d	test   %esi %esi 
+0x00007f86b040fd9d	jz     $0x00007f86b040fd70 
+0x00007f86b040fda7	mov    0xfffffff8(%rax) -> %rcx 
+0x00007f86b040fda7	movzx  0x00000315(%rcx) -> %eax 
+0x00007f86b040fda7	shr    $0x03 %al -> %al 
+0x00007f86b040fda7	and    $0x00000001 %eax -> %eax 
+0x00007f86b040fda7	cmp    %eax 0xffffffcc(%rbp) 
+0x00007f86b040fda7	jnz    $0x00007f86b040fd70 
+0x00007f86b040fdbd	cmp    0xffffffb8(%rbp) $0x0000000000000000 
+0x00007f86b040fdbd	mov    %esi -> %edi 
+0x00007f86b040fdbd	setz   -> %r8l 
+0x00007f86b040fdbd	shl    $0x0000000000000003 %rdi -> %rdi 
+0x00007f86b040fdbd	cmp    %rdi 0xffffffa8(%rbp) 
+0x00007f86b040fdbd	jbe    $0x00007f86b040fe04 
+0x00007f86b040fdd2	cmp    0xffffffa8(%rbp) $0x0000000000000000 
+0x00007f86b040fdd2	jnz    $0x00007f86b040ffe0 
+0x00007f86b040fddd	lea    0x1e(%rdi) -> %rax 
+0x00007f86b040fddd	mov    $0x00000010 -> %ebx 
+0x00007f86b040fddd	xor    %edx %edx -> %edx 
+0x00007f86b040fddd	mov    %rdi -> 0xffffffa8(%rbp) 
+0x00007f86b040fddd	div    %rbx %rdx %rax -> %rdx %rax 
+0x00007f86b040fddd	shl    $0x0000000000000004 %rax -> %rax 
+0x00007f86b040fddd	sub    %rax %rsp -> %rsp 
+0x00007f86b040fddd	lea    0x0f(%rsp) -> %rax 
+0x00007f86b040fddd	mov    %rax -> 0xffffffb0(%rbp) 
+0x00007f86b040fddd	and    $0xfffffffffffffff0 0xffffffb0(%rbp) -> 0xffffffb0(%rbp) 
+0x00007f86b040fddd	xor    %ebx %ebx -> %ebx 
+0x00007f86b040fddd	jmp    $0x00007f86b040fe19 
+0x00007f86b040fe19	cmp    0x28(%rcx) %rcx 
+0x00007f86b040fe19	jnz    $0x00007f86b040fe10 
+0x00007f86b040fe1f	cmp    %ebx %esi 
+0x00007f86b040fe1f	jnb    $0x00007f86b0410080 
+0x00007f86b040fe27	mov    0xffffffb0(%rbp) -> %rdi 
+0x00007f86b040fe27	mov    %ebx -> %eax 
+0x00007f86b040fe27	mov    %rcx -> (%rdi,%rax,8) 
+0x00007f86b040fe27	mov    %ebx -> 0x000003dc(%rcx) 
+0x00007f86b040fe27	add    $0x00000001 %ebx -> %ebx 
+0x00007f86b040fe27	add    $0x00000001 0x00000310(%rcx) -> 0x00000310(%rcx) 
+0x00007f86b040fe27	mov    0x18(%rcx) -> %rcx 
+0x00007f86b040fe27	test   %rcx %rcx 
+0x00007f86b040fe27	jnz    $0x00007f86b040fe19 
+0x00007f86b040fe4a	cmp    %ebx %esi 
+0x00007f86b040fe4a	jnz    $0x00007f86b0410046 
+0x00007f86b040fe52	mov    0xffffffb0(%rbp) -> %r14 
+0x00007f86b040fe52	mov    0xffffffb8(%rbp) -> %rcx 
+0x00007f86b040fe52	xor    %edx %edx -> %edx 
+0x00007f86b040fe52	mov    %ebx -> %esi 
+0x00007f86b040fe52	mov    %r14 -> %rdi 
+0x00007f86b040fe52	call   $0x00007f86b040fa80 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fa80	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fa80	mov    %rsp -> %rbp 
+0x00007f86b040fa80	push   %r15 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fa80	push   %r14 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fa80	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fa80	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fa80	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fa80	mov    %rsi -> %rbx 
+0x00007f86b040fa80	sub    $0x0000000000000058 %rsp -> %rsp 
+0x00007f86b040fa80	cmp    %rsi $0x0000000000000001 
+0x00007f86b040fa80	mov    %rdi -> 0xffffffb0(%rbp) 
+0x00007f86b040fa80	mov    %rsi -> 0xffffffc0(%rbp) 
+0x00007f86b040fa80	mov    %rdx -> 0xffffffa0(%rbp) 
+0x00007f86b040fa80	mov    %rsp -> 0xffffffa8(%rbp) 
+0x00007f86b040fa80	jz     $0x00007f86b040fbd0 
+0x00007f86b040faae	lea    (%rsi,%rsi,1) -> %rdx 
+0x00007f86b040faae	test   %rcx %rcx 
+0x00007f86b040faae	setz   -> %cl 
+0x00007f86b040faae	xor    %esi %esi -> %esi 
+0x00007f86b040faae	lea    0x10(%rdx) -> %rax 
+0x00007f86b040faae	movzx  %cl -> %ecx 
+0x00007f86b040faae	mov    %ecx -> 0xffffffb8(%rbp) 
+0x00007f86b040faae	and    $0xfffffffffffffff0 %rax -> %rax 
+0x00007f86b040faae	sub    %rax %rsp -> %rsp 
+0x00007f86b040faae	mov    %rsp -> %rdi 
+0x00007f86b040faae	mov    %rsp -> 0xffffffc8(%rbp) 
+0x00007f86b040faae	call   $0x00007f86b0419370 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0419370	mov    %rdx -> %rcx 
+0x00007f86b0419370	movzx  %sil -> %eax 
+0x00007f86b0419370	mov    %rdi -> %rdx 
+0x00007f86b0419370	rep stos %al %rdi %rcx -> %es:(%rdi) %rdi %rcx 
+0x00007f86b0419370	mov    %rdx -> %rax 
+0x00007f86b0419370	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040fad7	mov    0xffffffb8(%rbp) -> %ecx 
+0x00007f86b040fad7	mov    %ebx -> %eax 
+0x00007f86b040fad7	mov    0xffffffb0(%rbp) -> %r8 
+0x00007f86b040fad7	sub    $0x00000001 %eax -> %eax 
+0x00007f86b040fad7	mov    %eax -> 0xffffff9c(%rbp) 
+0x00007f86b040fad7	mov    %ecx -> %r14d 
+0x00007f86b040fad7	lea    0x01(%rcx) -> %r11d 
+0x00007f86b040fad7	mov    %ecx -> %r15d 
+0x00007f86b040fad7	jmp    $0x00007f86b040fb38 
+0x00007f86b040fb38	mov    0xffffffc8(%rbp) -> %rax 
+0x00007f86b040fb38	lea    (%r8,%r14,8) -> %rdi 
+0x00007f86b040fb38	lea    (%rax,%r14,2) -> %rax 
+0x00007f86b040fb38	movzx  (%rax) -> %ecx 
+0x00007f86b040fb38	add    $0x00000001 %ecx -> %ecx 
+0x00007f86b040fb38	data16 mov    %cx -> (%rax) 
+0x00007f86b040fb38	mov    (%rdi) -> %rax 
+0x00007f86b040fb38	mov    0x28(%rax) -> %rbx 
+0x00007f86b040fb38	cmp    %rbx %rax 
+0x00007f86b040fb38	jnz    $0x00007f86b040faf8 
+0x00007f86b040fb59	cmp    0x000003dc(%rbx) $0xffffffff 
+0x00007f86b040fb59	jz     $0x00007f86b040faf8 
+0x00007f86b040fb62	mov    0xffffff9c(%rbp) -> %edx 
+0x00007f86b040fb62	cmp    %r15d %edx 
+0x00007f86b040fb62	mov    %edx -> %eax 
+0x00007f86b040fb62	jnb    $0x00007f86b040faf8 
+0x00007f86b040fb6c	nop    0x00(%rax) 
+0x00007f86b040fb6c	mov    %eax -> %r12d 
+0x00007f86b040fb6c	lea    (%r8,%r12,8) -> %r13 
+0x00007f86b040fb6c	mov    0x00(%r13) -> %r9 
+0x00007f86b040fb6c	mov    0x000003b8(%r9) -> %rdx 
+0x00007f86b040fb6c	test   %rdx %rdx 
+0x00007f86b040fb6c	jnz    $0x00007f86b040fb99 
+0x00007f86b040fb87	jmp    $0x00007f86b040fba1 
+0x00007f86b040fba1	mov    0x000003c0(%r9) -> %rdx 
+0x00007f86b040fba1	test   %rdx %rdx 
+0x00007f86b040fba1	jnz    $0x00007f86b040fcc0 
+0x00007f86b040fbb1	sub    $0x00000001 %eax -> %eax 
+0x00007f86b040fbb1	cmp    %r15d %eax 
+0x00007f86b040fbb1	jb     $0x00007f86b040fb70 
+0x00007f86b040fb70	mov    %eax -> %r12d 
+0x00007f86b040fb70	lea    (%r8,%r12,8) -> %r13 
+0x00007f86b040fb70	mov    0x00(%r13) -> %r9 
+0x00007f86b040fb70	mov    0x000003b8(%r9) -> %rdx 
+0x00007f86b040fb70	test   %rdx %rdx 
+0x00007f86b040fb70	jnz    $0x00007f86b040fb99 
+0x00007f86b040fb99	mov    (%rdx) -> %rsi 
+0x00007f86b040fb99	test   %rsi %rsi 
+0x00007f86b040fb99	jnz    $0x00007f86b040fb90 
+0x00007f86b040fb90	add    $0x0000000000000008 %rdx -> %rdx 
+0x00007f86b040fb90	cmp    %rbx %rsi 
+0x00007f86b040fb90	jz     $0x00007f86b040fbdf 
+0x00007f86b040fbb9	mov    %r11d -> %r14d 
+0x00007f86b040fbb9	cmp    %r14 0xffffffc0(%rbp) 
+0x00007f86b040fbb9	mov    %r11d -> %r15d 
+0x00007f86b040fbb9	mov    %r14 -> %r9 
+0x00007f86b040fbb9	jnz    $0x00007f86b040fb0b 
+0x00007f86b040fb0b	mov    0xffffffc0(%rbp) -> %rdx 
+0x00007f86b040fb0b	mov    0xffffffc8(%rbp) -> %rax 
+0x00007f86b040fb0b	xor    %esi %esi -> %esi 
+0x00007f86b040fb0b	mov    %r11d -> 0xffffffb0(%rbp) 
+0x00007f86b040fb0b	mov    %r8 -> 0xffffffb8(%rbp) 
+0x00007f86b040fb0b	sub    %r9 %rdx -> %rdx 
+0x00007f86b040fb0b	lea    (%rax,%r14,2) -> %rdi 
+0x00007f86b040fb0b	add    %rdx %rdx -> %rdx 
+0x00007f86b040fb0b	call   $0x00007f86b0419370 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b040fb2c	mov    0xffffffb0(%rbp) -> %r11d 
+0x00007f86b040fb2c	mov    0xffffffb8(%rbp) -> %r8 
+0x00007f86b040fb2c	add    $0x00000001 %r11d -> %r11d 
+0x00007f86b040fb2c	mov    0xffffffc8(%rbp) -> %rax 
+0x00007f86b040fb2c	lea    (%r8,%r14,8) -> %rdi 
+0x00007f86b040fb2c	lea    (%rax,%r14,2) -> %rax 
+0x00007f86b040fb2c	movzx  (%rax) -> %ecx 
+0x00007f86b040fb2c	add    $0x00000001 %ecx -> %ecx 
+0x00007f86b040fb2c	data16 mov    %cx -> (%rax) 
+0x00007f86b040fb2c	mov    (%rdi) -> %rax 
+0x00007f86b040fb2c	mov    0x28(%rax) -> %rbx 
+0x00007f86b040fb2c	cmp    %rbx %rax 
+0x00007f86b040fb2c	jnz    $0x00007f86b040faf8 
+0x00007f86b040fbdf	mov    %ecx -> 0xffffff98(%rbp) 
+0x00007f86b040fbdf	mov    %eax -> %ecx 
+0x00007f86b040fbdf	mov    %r11d -> %r10d 
+0x00007f86b040fbdf	sub    %r15d %ecx -> %ecx 
+0x00007f86b040fbdf	lea    (%r8,%r10,8) -> %rsi 
+0x00007f86b040fbdf	mov    %r11d -> 0xffffff80(%rbp) 
+0x00007f86b040fbdf	lea    0x00(,%rcx,8) -> %rdx 
+0x00007f86b040fbdf	mov    %rcx -> 0xffffffb8(%rbp) 
+0x00007f86b040fbdf	mov    %r10 -> 0xffffff88(%rbp) 
+0x00007f86b040fbdf	mov    %r8 -> 0xffffff90(%rbp) 
+0x00007f86b040fbdf	mov    %r10 -> 0xffffffb0(%rbp) 
+0x00007f86b040fbdf	call   $0x00007f86b04191d0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b04191d0	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b04191d0	mov    %rdi -> %rcx 
+0x00007f86b04191d0	mov    %rdi -> %rax 
+0x00007f86b04191d0	sub    %rsi %rcx -> %rcx 
+0x00007f86b04191d0	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b04191d0	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b04191d0	sub    $0x0000000000000010 %rsp -> %rsp 
+0x00007f86b04191d0	cmp    %rcx %rdx 
+0x00007f86b04191d0	jb     $0x00007f86b0419298 
+0x00007f86b04191ea	cmp    %rdx $0x000000000000000f 
+0x00007f86b04191ea	mov    %rdi -> %rbx 
+0x00007f86b04191ea	mov    %rsi -> %rbp 
+0x00007f86b04191ea	jbe    $0x00007f86b0419262 
+0x00007f86b04191f6	mov    %rdi -> %r8 
+0x00007f86b04191f6	neg    %r8 -> %r8 
+0x00007f86b04191f6	and    $0x00000007 %r8d -> %r8d 
+0x00007f86b04191f6	sub    %r8 %rdx -> %rdx 
+0x00007f86b04191f6	test   %r8 %r8 
+0x00007f86b04191f6	mov    %rdx -> %r12 
+0x00007f86b04191f6	jz     $0x00007f86b0419229 
+0x00007f86b0419229	mov    %r12 -> %rdx 
+0x00007f86b0419229	mov    %rax -> 0x08(%rsp) 
+0x00007f86b0419229	mov    %rbp -> %rsi 
+0x00007f86b0419229	shr    $0x0000000000000003 %rdx -> %rdx 
+0x00007f86b0419229	test   %bpl $0x07 
+0x00007f86b0419229	mov    %rbx -> %rdi 
+0x00007f86b0419229	jz     $0x00007f86b0419360 
+0x00007f86b0419360	call   $0x00007f86b0419710 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0419710	lea    <rel> 0x00007f86b041a9d0 -> %rax 
+0x00007f86b0419710	mov    %rdx -> %rcx 
+0x00007f86b0419710	and    $0x00000007 %ecx -> %ecx 
+0x00007f86b0419710	movsxd (%rax,%rcx,4) -> %rcx 
+0x00007f86b0419710	add    %rcx %rax -> %rax 
+0x00007f86b0419710	jmp    %rax 
+0x00007f86b04197d0	mov    (%rsi) -> %rax 
+0x00007f86b04197d0	add    $0x0000000000000006 %rdx -> %rdx 
+0x00007f86b04197d0	sub    $0x0000000000000030 %rsi -> %rsi 
+0x00007f86b04197d0	sub    $0x0000000000000038 %rdi -> %rdi 
+0x00007f86b04197d0	jmp    $0x00007f86b0419768 
+0x00007f86b0419768	mov    0x38(%rsi) -> %rcx 
+0x00007f86b0419768	add    $0x0000000000000040 %rdi -> %rdi 
+0x00007f86b0419768	mov    %rax -> 0xfffffff8(%rdi) 
+0x00007f86b0419768	sub    $0x0000000000000008 %rdx -> %rdx 
+0x00007f86b0419768	jz     $0x00007f86b0419848 
+0x00007f86b0419848	mov    %rcx -> (%rdi) 
+0x00007f86b0419848	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b0419365	mov    0x08(%rsp) -> %rax 
+0x00007f86b0419365	jmp    $0x00007f86b041924f 
+0x00007f86b041924f	mov    %r12 -> %rdx 
+0x00007f86b041924f	and    $0xfffffffffffffff8 %rdx -> %rdx 
+0x00007f86b041924f	add    %rdx %rbp -> %rbp 
+0x00007f86b041924f	add    %rdx %rbx -> %rbx 
+0x00007f86b041924f	mov    %r12 -> %rdx 
+0x00007f86b041924f	and    $0x00000007 %edx -> %edx 
+0x00007f86b041924f	mov    %rbp -> %rsi 
+0x00007f86b041924f	lea    (%rbx,%rdx,1) -> %r8 
+0x00007f86b041924f	mov    %rbx -> %rcx 
+0x00007f86b041924f	sub    %rbx %rsi -> %rsi 
+0x00007f86b041924f	test   %rdx %rdx 
+0x00007f86b041924f	jz     $0x00007f86b0419288 
+0x00007f86b0419288	add    $0x0000000000000010 %rsp -> %rsp 
+0x00007f86b0419288	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86b0419288	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86b0419288	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86b0419288	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040fc0f	mov    %rbx -> 0x00(%r13) 
+0x00007f86b040fc0f	mov    0xffffffa0(%rbp) -> %r13 
+0x00007f86b040fc0f	mov    0xffffffb0(%rbp) -> %r10 
+0x00007f86b040fc0f	mov    0xffffff90(%rbp) -> %r8 
+0x00007f86b040fc0f	mov    0xffffff88(%rbp) -> %r9 
+0x00007f86b040fc0f	mov    0xffffff80(%rbp) -> %r11d 
+0x00007f86b040fc0f	test   %r13 %r13 
+0x00007f86b040fc0f	mov    0xffffff98(%rbp) -> %ecx 
+0x00007f86b040fc0f	jz     $0x00007f86b040fc68 
+0x00007f86b040fc68	mov    0xffffffc8(%rbp) -> %rax 
+0x00007f86b040fc68	movzx  (%rax,%r10,2) -> %edx 
+0x00007f86b040fc68	mov    0xffffffc0(%rbp) -> %rax 
+0x00007f86b040fc68	sub    %r14 %rax -> %rax 
+0x00007f86b040fc68	cmp    %rdx %rax 
+0x00007f86b040fc68	jbe    $0x00007f86b040fc88 
+0x00007f86b040fc88	mov    0xffffffc8(%rbp) -> %rbx 
+0x00007f86b040fc88	mov    0xffffffb8(%rbp) -> %rdx 
+0x00007f86b040fc88	mov    %r11d -> 0xffffff88(%rbp) 
+0x00007f86b040fc88	mov    %r8 -> 0xffffff90(%rbp) 
+0x00007f86b040fc88	mov    %ecx -> 0xffffffb0(%rbp) 
+0x00007f86b040fc88	lea    (%rbx,%r10,2) -> %rsi 
+0x00007f86b040fc88	lea    (%rbx,%r14,2) -> %rdi 
+0x00007f86b040fc88	add    %rdx %rdx -> %rdx 
+0x00007f86b040fc88	call   $0x00007f86b04191d0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b0419262	mov    %rbp -> %rsi 
+0x00007f86b0419262	lea    (%rbx,%rdx,1) -> %r8 
+0x00007f86b0419262	mov    %rbx -> %rcx 
+0x00007f86b0419262	sub    %rbx %rsi -> %rsi 
+0x00007f86b0419262	test   %rdx %rdx 
+0x00007f86b0419262	jz     $0x00007f86b0419288 
+0x00007f86b0419274	nop    0x00(%rax) 
+0x00007f86b0419274	movzx  (%rsi,%rcx,1) -> %edx 
+0x00007f86b0419274	add    $0x0000000000000001 %rcx -> %rcx 
+0x00007f86b0419274	mov    %dl -> 0xffffffff(%rcx) 
+0x00007f86b0419274	cmp    %rcx %r8 
+0x00007f86b0419274	jnz    $0x00007f86b0419278 
+0x00007f86b0419278	movzx  (%rsi,%rcx,1) -> %edx 
+0x00007f86b0419278	add    $0x0000000000000001 %rcx -> %rcx 
+0x00007f86b0419278	mov    %dl -> 0xffffffff(%rcx) 
+0x00007f86b0419278	cmp    %rcx %r8 
+0x00007f86b0419278	jnz    $0x00007f86b0419278 
+0x00007f86b040fcab	mov    0xffffffb0(%rbp) -> %ecx 
+0x00007f86b040fcab	mov    0xffffff90(%rbp) -> %r8 
+0x00007f86b040fcab	mov    0xffffff88(%rbp) -> %r11d 
+0x00007f86b040fcab	data16 mov    %cx -> (%rbx,%r12,2) 
+0x00007f86b040fcab	jmp    $0x00007f86b040fb38 
+0x00007f86b040faf8	mov    %r11d -> %r14d 
+0x00007f86b040faf8	cmp    %r14 0xffffffc0(%rbp) 
+0x00007f86b040faf8	mov    %r11d -> %r15d 
+0x00007f86b040faf8	mov    %r14 -> %r9 
+0x00007f86b040faf8	jz     $0x00007f86b040fbcc 
+0x00007f86b040fbcc	mov    0xffffffa8(%rbp) -> %rsp 
+0x00007f86b040fbcc	lea    0xffffffd8(%rbp) -> %rsp 
+0x00007f86b040fbcc	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86b040fbcc	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86b040fbcc	pop    %rsp (%rsp) -> %r13 %rsp 
+0x00007f86b040fbcc	pop    %rsp (%rsp) -> %r14 %rsp 
+0x00007f86b040fbcc	pop    %rsp (%rsp) -> %r15 %rsp 
+0x00007f86b040fbcc	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86b040fbcc	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040fe66	lea    <rel> 0x00007f86b0621908 -> %rdi 
+0x00007f86b040fe66	call   <rel> 0x00007f86b0621f10 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86b04022e0	sub    $0x00000001 0x04(%rdi) -> 0x04(%rdi) 
+0x00007f86b04022e0	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040fe73	test   %ebx %ebx 
+0x00007f86b040fe73	jz     $0x00007f86b040fd7d 
+0x00007f86b040fe7b	sub    $0x00000001 %ebx -> %ebx 
+0x00007f86b040fe7b	mov    %r14 -> %r13 
+0x00007f86b040fe7b	lea    0x08(%r14,%rbx,8) -> %r14 
+0x00007f86b040fe7b	data16 nop    %cs:0x00000000(%rax,%rax,1) 
+0x00007f86b040fe7b	mov    0x00(%r13) -> %rbx 
+0x00007f86b040fe7b	movzx  0x00000314(%rbx) -> %eax 
+0x00007f86b040fe7b	test   %al $0x08 
+0x00007f86b040fe7b	jz     $0x00007f86b040ff2d 
+0x00007f86b040fea3	and    $0xfffffff7 %eax -> %eax 
+0x00007f86b040fea3	mov    %al -> 0x00000314(%rbx) 
+0x00007f86b040fea3	mov    0x00000110(%rbx) -> %rax 
+0x00007f86b040fea3	test   %rax %rax 
+0x00007f86b040fea3	jz     $0x00007f86b040ff80 
+0x00007f86b040febc	test   <rel> 0x00007f86b0620c60 $0x02 
+0x00007f86b040febc	jnz    $0x00007f86b040ff97 
+0x00007f86b040fec9	test   %rax %rax 
+0x00007f86b040fec9	jz     $0x00007f86b040ff03 
+0x00007f86b040fece	mov    0x08(%rax) -> %r12 
+0x00007f86b040fece	mov    0x00000120(%rbx) -> %rax 
+0x00007f86b040fece	add    (%rbx) %r12 -> %r12 
+0x00007f86b040fece	mov    0x08(%rax) -> %rdx 
+0x00007f86b040fece	shr    $0x0000000000000003 %rdx -> %rdx 
+0x00007f86b040fece	test   %edx %edx 
+0x00007f86b040fece	lea    0xffffffff(%rdx) -> %r15d 
+0x00007f86b040fece	jnz    $0x00007f86b040fef3 
+0x00007f86b040fef3	mov    %r15d -> %edx 
+0x00007f86b040fef3	call   (%r12,%rdx,8) %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000000400460	cmp    <rel> 0x0000000000600870 $0x00 
+0x0000000000400460	jnz    $0x000000000040047a 
+0x0000000000400469	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000000400469	mov    %rsp -> %rbp 
+0x0000000000400469	call   $0x00000000004003f0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004003f0	mov    $0x00600877 -> %eax 
+0x00000000004003f0	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004003f0	sub    $0x0000000000600870 %rax -> %rax 
+0x00000000004003f0	cmp    %rax $0x000000000000000e 
+0x00000000004003f0	mov    %rsp -> %rbp 
+0x00000000004003f0	jnbe   $0x0000000000400407 
+0x0000000000400405	pop    %rsp (%rsp) -> %rbp %rsp 
+0x0000000000400405	ret    %rsp (%rsp) -> %rsp 
+0x0000000000400472	pop    %rsp (%rsp) -> %rbp %rsp 
+0x0000000000400472	mov    $0x01 -> <rel> 0x0000000000600870 
+0x0000000000400472	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040fefa	test   %r15d %r15d 
+0x00007f86b040fefa	lea    0xffffffff(%r15) -> %edx 
+0x00007f86b040fefa	jnz    $0x00007f86b040fef0 
+0x00007f86b040ff03	mov    0x000000a8(%rbx) -> %rax 
+0x00007f86b040ff03	test   %rax %rax 
+0x00007f86b040ff03	jz     $0x00007f86b040ff18 
+0x00007f86b040ff0f	mov    0x08(%rax) -> %rax 
+0x00007f86b040ff0f	add    (%rbx) %rax -> %rax 
+0x00007f86b040ff0f	call   %rax %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000000400534	sub    $0x0000000000000008 %rsp -> %rsp 
+0x0000000000400534	add    $0x0000000000000008 %rsp -> %rsp 
+0x0000000000400534	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040ff18	mov    0xffffffcc(%rbp) -> %esi 
+0x00007f86b040ff18	test   %esi %esi 
+0x00007f86b040ff18	jnz    $0x00007f86b040ff2d 
+0x00007f86b040ff1f	mov    <rel> 0x00007f86b0620d88 -> %ecx 
+0x00007f86b040ff1f	test   %ecx %ecx 
+0x00007f86b040ff1f	jnz    $0x00007f86b04100be 
+0x00007f86b040ff2d	add    $0x0000000000000008 %r13 -> %r13 
+0x00007f86b040ff2d	sub    $0x00000001 0x00000310(%rbx) -> 0x00000310(%rbx) 
+0x00007f86b040ff2d	cmp    %r13 %r14 
+0x00007f86b040ff2d	jnz    $0x00007f86b040fe90 
+0x00007f86b040fe90	mov    0x00(%r13) -> %rbx 
+0x00007f86b040fe90	movzx  0x00000314(%rbx) -> %eax 
+0x00007f86b040fe90	test   %al $0x08 
+0x00007f86b040fe90	jz     $0x00007f86b040ff2d 
+0x00007f86b040ff80	cmp    0x000000a8(%rbx) $0x0000000000000000 
+0x00007f86b040ff80	jz     $0x00007f86b040ff18 
+0x00007f86b040ff8a	test   <rel> 0x00007f86b0620c60 $0x02 
+0x00007f86b040ff8a	jz     $0x00007f86b040fec9 
+0x00007f86b01f7870	xor    %eax %eax -> %eax 
+0x00007f86b01f7870	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afc48ed0	lea    <rel> 0x00007f86afe4b0e0 -> %rdi 
+0x00007f86afc48ed0	jmp    $0x00007f86afc492c0 
+0x00007f86afc492c0	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afc492c0	mov    %rdi -> %rbx 
+0x00007f86afc492c0	sub    $0x0000000000000030 %rsp -> %rsp 
+0x00007f86afc492c0	mov    0x18(%rdi) -> %rsi 
+0x00007f86afc492c0	test   %rsi %rsi 
+0x00007f86afc492c0	jz     $0x00007f86afc492e1 
+0x00007f86afc492e1	add    $0x0000000000000030 %rsp -> %rsp 
+0x00007f86afc492e1	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86afc492e1	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040fef0	mov    %edx -> %r15d 
+0x00007f86b040fef0	mov    %r15d -> %edx 
+0x00007f86b040fef0	call   (%r12,%rdx,8) %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afc48f50	cmp    <rel> 0x00007f86afe4b0a0 $0x00 
+0x00007f86afc48f50	jnz    $0x00007f86afc48f80 
+0x00007f86afc48f59	cmp    <rel> 0x00007f86afe4aff8 $0x0000000000000000 
+0x00007f86afc48f59	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afc48f59	mov    %rsp -> %rbp 
+0x00007f86afc48f59	jz     $0x00007f86afc48f73 
+0x00007f86afc48f67	mov    <rel> 0x00007f86afe4b098 -> %rdi 
+0x00007f86afc48f67	call   $0x00007f86afc48ec0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afc48ec0	jmp    <rel> 0x00007f86afe4b090 
+0x00007f86afc48ec6	push   $0x000000000000000f %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afc48ec6	jmp    $0x00007f86afc48dc0 
+0x00007f86afc48dc0	push   <rel> 0x00007f86afe4b008 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afc48dc0	jmp    <rel> 0x00007f86afe4b010 
+0x00007f86b0418650	mov    (%rdi) -> %al 
+0x00007f86b0418650	cmp    %al (%rsi) 
+0x00007f86b0418650	jnz    $0x00007f86b0418663 
+0x00007f86b0418663	mov    $0x00000001 -> %eax 
+0x00007f86b0418663	mov    $0xffffffff -> %ecx 
+0x00007f86b0418663	cmovb  %ecx %eax -> %eax 
+0x00007f86b0418663	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b0410954	test   %eax %eax 
+0x00007f86b0410954	jnz    $0x00007f86b0410940 
+0x00007f86b040a480	add    $0x0000000000000004 %rdx -> %rdx 
+0x00007f86b040a480	and    $0x00000001 %ecx -> %ecx 
+0x00007f86b040a480	jnz    $0x00007f86b0409cf4 
+0x00007f86afe841a0	push   %r15 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe841a0	push   %r14 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe841a0	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe841a0	xor    %r13d %r13d -> %r13d 
+0x00007f86afe841a0	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe841a0	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe841a0	mov    %rdi -> %rbp 
+0x00007f86afe841a0	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afe841a0	sub    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86afe841a0	mov    <rel> 0x00007f86b01f15a8 -> %r14 
+0x00007f86afe841a0	test   %r14 %r14 
+0x00007f86afe841a0	jz     $0x00007f86afe84254 
+0x00007f86afe841c4	nop    0x00(%rax) 
+0x00007f86afe841c4	mov    0x08(%r14) -> %rax 
+0x00007f86afe841c4	lea    0x10(%r14) -> %r12 
+0x00007f86afe841c4	shl    $0x0000000000000005 %rax -> %rax 
+0x00007f86afe841c4	lea    0xfffffff0(%r14,%rax,1) -> %rbx 
+0x00007f86afe841c4	cmp    %rbx %r12 
+0x00007f86afe841c4	jnb    $0x00007f86afe841ef 
+0x00007f86afe841de	jmp    $0x00007f86afe84248 
+0x00007f86afe84248	mov    (%r14) -> %r14 
+0x00007f86afe84248	test   %r14 %r14 
+0x00007f86afe84248	jnz    $0x00007f86afe841c8 
+0x00007f86afe84254	mov    <rel> 0x00007f86b01f15b0 -> %rcx 
+0x00007f86afe84254	test   %rcx %rcx 
+0x00007f86afe84254	jz     $0x00007f86afe842ac 
+0x00007f86afe84260	mov    0x08(%rcx) -> %rax 
+0x00007f86afe84260	lea    0x10(%rcx) -> %rdx 
+0x00007f86afe84260	shl    $0x0000000000000005 %rax -> %rax 
+0x00007f86afe84260	lea    0xfffffff0(%rcx,%rax,1) -> %rax 
+0x00007f86afe84260	cmp    %rax %rdx 
+0x00007f86afe84260	jnb    $0x00007f86afe8428f 
+0x00007f86afe84276	jmp    $0x00007f86afe842a4 
+0x00007f86afe842a4	mov    (%rcx) -> %rcx 
+0x00007f86afe842a4	test   %rcx %rcx 
+0x00007f86afe842a4	jnz    $0x00007f86afe84260 
+0x00007f86afe842ac	test   %rbp %rbp 
+0x00007f86afe842ac	jz     $0x00007f86afe842c7 
+0x00007f86afe842b1	add    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86afe842b1	mov    %rbp -> %rdi 
+0x00007f86afe842b1	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86afe842b1	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86afe842b1	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86afe842b1	pop    %rsp (%rsp) -> %r13 %rsp 
+0x00007f86afe842b1	pop    %rsp (%rsp) -> %r14 %rsp 
+0x00007f86afe842b1	pop    %rsp (%rsp) -> %r15 %rsp 
+0x00007f86afe842b1	jmp    $0x00007f86aff3dc90 
+0x00007f86aff3dc90	mov    <rel> 0x00007f86b01f65b8 -> %r9 
+0x00007f86aff3dc90	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86aff3dc90	mov    %rsp -> %rbp 
+0x00007f86aff3dc90	test   %r9 %r9 
+0x00007f86aff3dc90	jz     $0x00007f86aff3dcc1 
+0x00007f86aff3dcc1	leave  %rbp %rsp (%rbp) -> %rsp %rbp 
+0x00007f86aff3dcc1	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afc48f73	call   $0x00007f86afc48ee0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afc48ee0	lea    <rel> 0x00007f86afe4b0a7 -> %rax 
+0x00007f86afc48ee0	lea    <rel> 0x00007f86afe4b0a0 -> %rdi 
+0x00007f86afc48ee0	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afc48ee0	sub    %rdi %rax -> %rax 
+0x00007f86afc48ee0	mov    %rsp -> %rbp 
+0x00007f86afc48ee0	cmp    %rax $0x000000000000000e 
+0x00007f86afc48ee0	jnbe   $0x00007f86afc48efd 
+0x00007f86afc48efb	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86afc48efb	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afc48f78	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86afc48f78	mov    $0x01 -> <rel> 0x00007f86afe4b0a0 
+0x00007f86afc48f78	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afc49980	sub    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86afc49980	add    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86afc49980	ret    %rsp (%rsp) -> %rsp 
+0x00007f86af94abd0	cmp    <rel> 0x00007f86afc47110 $0x00 
+0x00007f86af94abd0	jnz    $0x00007f86af94ac00 
+0x00007f86af94abd9	cmp    <rel> 0x00007f86afc46fe8 $0x0000000000000000 
+0x00007f86af94abd9	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86af94abd9	mov    %rsp -> %rbp 
+0x00007f86af94abd9	jz     $0x00007f86af94abf3 
+0x00007f86af94abe7	mov    <rel> 0x00007f86afc470f8 -> %rdi 
+0x00007f86af94abe7	call   $0x00007f86af94a830 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86af94a830	jmp    <rel> 0x00007f86afc470e8 
+0x00007f86af94a836	push   $0x000000000000000c %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86af94a836	jmp    $0x00007f86af94a680 
+0x00007f86af94a680	push   <rel> 0x00007f86afc47008 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86af94a680	jmp    <rel> 0x00007f86afc47010 
+0x00007f86b0418656	inc    %rdi -> %rdi 
+0x00007f86b0418656	inc    %rsi -> %rsi 
+0x00007f86b0418656	test   %al %al 
+0x00007f86b0418656	jnz    $0x00007f86b0418650 
+0x00007f86af94abf3	call   $0x00007f86af94ab60 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86af94ab60	lea    <rel> 0x00007f86afc47117 -> %rax 
+0x00007f86af94ab60	lea    <rel> 0x00007f86afc47110 -> %rdi 
+0x00007f86af94ab60	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86af94ab60	sub    %rdi %rax -> %rax 
+0x00007f86af94ab60	mov    %rsp -> %rbp 
+0x00007f86af94ab60	cmp    %rax $0x000000000000000e 
+0x00007f86af94ab60	jnbe   $0x00007f86af94ab7d 
+0x00007f86af94ab7b	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86af94ab7b	ret    %rsp (%rsp) -> %rsp 
+0x00007f86af94abf8	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86af94abf8	mov    $0x01 -> <rel> 0x00007f86afc47110 
+0x00007f86af94abf8	ret    %rsp (%rsp) -> %rsp 
+0x00007f86af9b7858	sub    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86af9b7858	add    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86af9b7858	ret    %rsp (%rsp) -> %rsp 
+0x00007f86b040ff41	sub    $0x0000000000000090 0xffffffc0(%rbp) -> 0xffffffc0(%rbp) 
+0x00007f86b040ff41	sub    $0x0000000000000001 0xffffffb8(%rbp) -> 0xffffffb8(%rbp) 
+0x00007f86b040ff41	jns    $0x00007f86b040fd90 
+0x00007f86b040ff54	mov    0xffffffcc(%rbp) -> %edx 
+0x00007f86b040ff54	test   %edx %edx 
+0x00007f86b040ff54	jnz    $0x00007f86b041002a 
+0x00007f86b040ff5f	mov    <rel> 0x00007f86b0620d88 -> %eax 
+0x00007f86b040ff5f	test   %eax %eax 
+0x00007f86b040ff5f	jz     $0x00007f86b041002a 
+0x00007f86b041002a	test   <rel> 0x00007f86b0620c60 $0x80 
+0x00007f86b041002a	jnz    $0x00007f86b0410100 
+0x00007f86b0410037	lea    0xffffffd8(%rbp) -> %rsp 
+0x00007f86b0410037	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86b0410037	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86b0410037	pop    %rsp (%rsp) -> %r13 %rsp 
+0x00007f86b0410037	pop    %rsp (%rsp) -> %r14 %rsp 
+0x00007f86b0410037	pop    %rsp (%rsp) -> %r15 %rsp 
+0x00007f86b0410037	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86b0410037	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afe83ea9	jmp    $0x00007f86afe83df0 
+0x00007f86afe83e2f	mov    0x00(%r13) -> %rax 
+0x00007f86afe83e2f	test   %rax %rax 
+0x00007f86afe83e2f	mov    %rax -> 0x00(%rbp) 
+0x00007f86afe83e2f	jnz    $0x00007f86afe83ec8 
+0x00007f86afe83e40	test   %r12l %r12l 
+0x00007f86afe83e40	jz     $0x00007f86afe83e64 
+0x00007f86afe83e45	lea    <rel> 0x00007f86b01ed7f0 -> %rbp 
+0x00007f86afe83e45	lea    <rel> 0x00007f86b01ed7f8 -> %r12 
+0x00007f86afe83e45	cmp    %rbp %r12 
+0x00007f86afe83e45	jnb    $0x00007f86afe83e64 
+0x00007f86afe83e58	call   0x00(%rbp) %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afec26f0	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afec26f0	xor    %edi %edi -> %edi 
+0x00007f86afec26f0	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afec26f0	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afec26f0	mov    %fs:0x10 -> %rbp 
+0x00007f86afec26f0	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afec26f0	sub    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86afec26f0	call   $0x00007f86afec2470 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afec2470	push   %r15 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afec2470	push   %r14 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afec2470	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afec2470	xor    %r13d %r13d -> %r13d 
+0x00007f86afec2470	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afec2470	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afec2470	mov    %edi -> %ebp 
+0x00007f86afec2470	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86afec2470	sub    $0x0000000000000028 %rsp -> %rsp 
+0x00007f86afec2470	test   %edi %edi 
+0x00007f86afec2470	jz     $0x00007f86afec24f8 
+0x00007f86afec24f8	mov    <rel> 0x00007f86b01f2040 -> %rbx 
+0x00007f86afec24f8	xor    %r15d %r15d -> %r15d 
+0x00007f86afec24f8	mov    <rel> 0x00007f86b01f3798 -> %r14d 
+0x00007f86afec24f8	test   %rbx %rbx 
+0x00007f86afec24f8	jz     $0x00007f86afec2627 
+0x00007f86afec2512	mov    %fs:0x10 -> %r12 
+0x00007f86afec2512	jmp    $0x00007f86afec2533 
+0x00007f86afec2533	test   %ebp %ebp 
+0x00007f86afec2533	mov    %rbx -> <rel> 0x00007f86b01f3790 
+0x00007f86afec2533	jz     $0x00007f86afec2586 
+0x00007f86afec2586	mov    0x000000c0(%rbx) -> %esi 
+0x00007f86afec2586	test   %esi %esi 
+0x00007f86afec2586	jle    $0x00007f86afec2670 
+0x00007f86afec2670	mov    0x20(%rbx) -> %rax 
+0x00007f86afec2670	cmp    0x28(%rbx) %rax 
+0x00007f86afec2670	jnbe   $0x00007f86afec25a5 
+0x00007f86afec267e	jmp    $0x00007f86afec25c3 
+0x00007f86afec25c3	test   %ebp %ebp 
+0x00007f86afec25c3	jz     $0x00007f86afec2600 
+0x00007f86afec2600	mov    <rel> 0x00007f86b01f3798 -> %edx 
+0x00007f86afec2600	mov    $0x00000000 -> <rel> 0x00007f86b01f3790 
+0x00007f86afec2600	cmp    %r14d %edx 
+0x00007f86afec2600	jnz    $0x00007f86afec2520 
+0x00007f86afec261a	mov    0x68(%rbx) -> %rbx 
+0x00007f86afec261a	test   %rbx %rbx 
+0x00007f86afec261a	jnz    $0x00007f86afec2533 
+0x00007f86afec2627	test   %ebp %ebp 
+0x00007f86afec2627	jz     $0x00007f86afec2634 
+0x00007f86afec2634	test   %r13d %r13d 
+0x00007f86afec2634	jz     $0x00007f86afec2654 
+0x00007f86afec2654	add    $0x0000000000000028 %rsp -> %rsp 
+0x00007f86afec2654	mov    %r15d -> %eax 
+0x00007f86afec2654	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86afec2654	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86afec2654	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86afec2654	pop    %rsp (%rsp) -> %r13 %rsp 
+0x00007f86afec2654	pop    %rsp (%rsp) -> %r14 %rsp 
+0x00007f86afec2654	pop    %rsp (%rsp) -> %r15 %rsp 
+0x00007f86afec2654	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afec270a	mov    <rel> 0x00007f86b01f2040 -> %rbx 
+0x00007f86afec270a	mov    %eax -> %r12d 
+0x00007f86afec270a	test   %rbx %rbx 
+0x00007f86afec270a	jz     $0x00007f86afec27d7 
+0x00007f86afec271d	nop    (%rax) 
+0x00007f86afec271d	mov    (%rbx) -> %edx 
+0x00007f86afec271d	test   %dl $0x02 
+0x00007f86afec271d	jnz    $0x00007f86afec27c0 
+0x00007f86afec27c0	mov    $0xffffffff -> 0x000000c0(%rbx) 
+0x00007f86afec27c0	mov    0x68(%rbx) -> %rbx 
+0x00007f86afec27c0	test   %rbx %rbx 
+0x00007f86afec27c0	jnz    $0x00007f86afec2720 
+0x00007f86afec2720	mov    (%rbx) -> %edx 
+0x00007f86afec2720	test   %dl $0x02 
+0x00007f86afec2720	jnz    $0x00007f86afec27c0 
+0x00007f86afec272b	and    $0x00001008 %edx -> %edx 
+0x00007f86afec272b	cmp    %edx $0x00000008 
+0x00007f86afec272b	jz     $0x00007f86afec27c0 
+0x00007f86afec273a	mov    0x000000c0(%rbx) -> %edi 
+0x00007f86afec273a	test   %edi %edi 
+0x00007f86afec273a	jz     $0x00007f86afec27c0 
+0x00007f86afec27d7	add    $0x0000000000000008 %rsp -> %rsp 
+0x00007f86afec27d7	mov    %r12d -> %eax 
+0x00007f86afec27d7	pop    %rsp (%rsp) -> %rbx %rsp 
+0x00007f86afec27d7	pop    %rsp (%rsp) -> %rbp %rsp 
+0x00007f86afec27d7	pop    %rsp (%rsp) -> %r12 %rsp 
+0x00007f86afec27d7	pop    %rsp (%rsp) -> %r13 %rsp 
+0x00007f86afec27d7	ret    %rsp (%rsp) -> %rsp 
+0x00007f86afe83e5b	add    $0x0000000000000008 %rbp -> %rbp 
+0x00007f86afe83e5b	cmp    %rbp %r12 
+0x00007f86afe83e5b	jb     $0x00007f86afe83e58 
+0x00007f86afe83e64	mov    %ebx -> %edi 
+0x00007f86afe83e64	call   $0x00007f86aff02f40 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00007f86aff02f40	movsxd %edi -> %rdx 
+0x00007f86aff02f40	mov    <rel> 0x00007f86b01f0e30 -> %r10 
+0x00007f86aff02f40	mov    $0x000000e7 -> %r9d 
+0x00007f86aff02f40	mov    $0x0000003c -> %r8d 
+0x00007f86aff02f40	jmp    $0x00007f86aff02f71 
+0x00007f86aff02f71	mov    %rdx -> %rdi 
+0x00007f86aff02f71	mov    %r9d -> %eax 
+0x00007f86aff02f71	syscall -> %rcx 

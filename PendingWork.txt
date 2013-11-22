@@ -23,10 +23,24 @@ Future Work to be Done
 October 6th, 2013
 
 Running with 
-cd build
-./bin64/drrun -c /api/samples/bin/libbbbuf.so -- ls
+cd dynamorio/build
+./bin64/drrun -c api/samples/bin/libbbbuf.so -- ls
 
 
 October 29
 Need to determine start/end address of program to filter
 	For .exe files, it's in the PE Header. For .o (linux) files, it's in the ELF Header
+
+	Python ELF scripts gives info including:
+
+Entry point address:             : 4195264, 0x4003c0
+Start of program headers (offset): 64, 0x40 bytes
+Start of section headers (offset): 2496, 0x9c0 bytes
+
+	for program that runs from
+		0x4004b0 to
+		0x4004c2
+
+Difference between EP and actual EP is compiler optimizations (should we filter?)
+
+

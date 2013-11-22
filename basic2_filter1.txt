@@ -1,0 +1,99 @@
+0x00000000004003c0	xor    %ebp %ebp -> %ebp 
+0x00000000004003c0	mov    %rdx -> %r9 
+0x00000000004003c0	pop    %rsp (%rsp) -> %rsi %rsp 
+0x00000000004003c0	mov    %rsp -> %rdx 
+0x00000000004003c0	and    $0xfffffffffffffff0 %rsp -> %rsp 
+0x00000000004003c0	push   %rax %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004003c0	push   %rsp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004003c0	mov    $0x00400540 -> %r8 
+0x00000000004003c0	mov    $0x004004d0 -> %rcx 
+0x00000000004003c0	mov    $0x004004b7 -> %rdi 
+0x00000000004003c0	call   $0x00000000004003a0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004003a0	jmp    <rel> 0x0000000000600860 
+0x00000000004003a6	push   $0x0000000000000000 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004003a6	jmp    $0x0000000000400390 
+0x0000000000400390	push   <rel> 0x0000000000600850 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000000400390	jmp    <rel> 0x0000000000600858 
+0x00000000004004d0	push   %r15 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004d0	mov    %edi -> %r15d 
+0x00000000004004d0	push   %r14 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004d0	mov    %rsi -> %r14 
+0x00000000004004d0	push   %r13 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004d0	mov    %rdx -> %r13 
+0x00000000004004d0	push   %r12 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004d0	lea    <rel> 0x0000000000600658 -> %r12 
+0x00000000004004d0	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004d0	lea    <rel> 0x0000000000600660 -> %rbp 
+0x00000000004004d0	push   %rbx %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004004d0	sub    %r12 %rbp -> %rbp 
+0x00000000004004d0	xor    %ebx %ebx -> %ebx 
+0x00000000004004d0	sar    $0x0000000000000003 %rbp -> %rbp 
+0x00000000004004d0	sub    $0x0000000000000008 %rsp -> %rsp 
+0x00000000004004d0	call   $0x0000000000400370 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000000400370	sub    $0x0000000000000008 %rsp -> %rsp 
+0x0000000000400370	mov    <rel> 0x0000000000600840 -> %rax 
+0x0000000000400370	test   %rax %rax 
+0x0000000000400370	jz     $0x0000000000400385 
+0x0000000000400385	add    $0x0000000000000008 %rsp -> %rsp 
+0x0000000000400385	ret    %rsp (%rsp) -> %rsp 
+0x0000000000400503	test   %rbp %rbp 
+0x0000000000400503	jz     $0x0000000000400526 
+0x0000000000400508	nop    0x00000000(%rax,%rax,1) 
+0x0000000000400508	mov    %r13 -> %rdx 
+0x0000000000400508	mov    %r14 -> %rsi 
+0x0000000000400508	mov    %r15d -> %edi 
+0x0000000000400508	call   (%r12,%rbx,8) %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000000400480	cmp    <rel> 0x0000000000600668 $0x0000000000000000 
+0x0000000000400480	jz     $0x00000000004004a8 
+0x00000000004004a8	jmp    $0x0000000000400420 
+0x0000000000400420	mov    $0x00600880 -> %eax 
+0x0000000000400420	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000000400420	sub    $0x0000000000600880 %rax -> %rax 
+0x0000000000400420	sar    $0x0000000000000003 %rax -> %rax 
+0x0000000000400420	mov    %rsp -> %rbp 
+0x0000000000400420	mov    %rax -> %rdx 
+0x0000000000400420	shr    $0x000000000000003f %rdx -> %rdx 
+0x0000000000400420	add    %rdx %rax -> %rax 
+0x0000000000400420	sar    $0x0000000000000001 %rax -> %rax 
+0x0000000000400420	jnz    $0x0000000000400444 
+0x0000000000400442	pop    %rsp (%rsp) -> %rbp %rsp 
+0x0000000000400442	ret    %rsp (%rsp) -> %rsp 
+0x000000000040051d	add    $0x0000000000000001 %rbx -> %rbx 
+0x000000000040051d	cmp    %rbx %rbp 
+0x000000000040051d	jnz    $0x0000000000400510 
+0x0000000000400526	add    $0x0000000000000008 %rsp -> %rsp 
+0x0000000000400526	pop    %rsp (%rsp) -> %rbx %rsp 
+0x0000000000400526	pop    %rsp (%rsp) -> %rbp %rsp 
+0x0000000000400526	pop    %rsp (%rsp) -> %r12 %rsp 
+0x0000000000400526	pop    %rsp (%rsp) -> %r13 %rsp 
+0x0000000000400526	pop    %rsp (%rsp) -> %r14 %rsp 
+0x0000000000400526	pop    %rsp (%rsp) -> %r15 %rsp 
+0x0000000000400526	ret    %rsp (%rsp) -> %rsp 
+0x00000000004004b7	xor    %ebx %ebx -> %ebx 								//MAIN:
+0x00000000004004b7	inc    %ebx -> %ebx 
+0x00000000004004b7	inc    %ebx -> %ebx 
+0x00000000004004b7	call   $0x00000000004004b0 %rsp -> %rsp 0xfffffff8(%rsp) 		//CALL FOO
+0x00000000004004b0	xor    %eax %eax -> %eax 
+0x00000000004004b0	inc    %eax -> %eax 
+0x00000000004004b0	inc    %eax -> %eax 
+0x00000000004004b0	ret    %rsp (%rsp) -> %rsp 								//FOO RTN
+0x00000000004004c2	ret    %rsp (%rsp) -> %rsp 								//MAIN RTN
+0x0000000000400460	cmp    <rel> 0x0000000000600880 $0x00 
+0x0000000000400460	jnz    $0x000000000040047a 
+0x0000000000400469	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x0000000000400469	mov    %rsp -> %rbp 
+0x0000000000400469	call   $0x00000000004003f0 %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004003f0	mov    $0x00600887 -> %eax 
+0x00000000004003f0	push   %rbp %rsp -> %rsp 0xfffffff8(%rsp) 
+0x00000000004003f0	sub    $0x0000000000600880 %rax -> %rax 
+0x00000000004003f0	cmp    %rax $0x000000000000000e 
+0x00000000004003f0	mov    %rsp -> %rbp 
+0x00000000004003f0	jnbe   $0x0000000000400407 
+0x0000000000400405	pop    %rsp (%rsp) -> %rbp %rsp 
+0x0000000000400405	ret    %rsp (%rsp) -> %rsp 
+0x0000000000400472	pop    %rsp (%rsp) -> %rbp %rsp 
+0x0000000000400472	mov    $0x01 -> <rel> 0x0000000000600880 
+0x0000000000400472	ret    %rsp (%rsp) -> %rsp 
+0x0000000000400544	sub    $0x0000000000000008 %rsp -> %rsp 
+0x0000000000400544	add    $0x0000000000000008 %rsp -> %rsp 
+0x0000000000400544	ret    %rsp (%rsp) -> %rsp 
